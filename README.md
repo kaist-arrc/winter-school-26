@@ -1,5 +1,7 @@
 # ARRC Winter Research Talent Program
 
+> **작업 중 / Work in progress.** 프로그램 내용은 검토·수정 중이며 일정과 모집 조건은 미확정입니다. 최종 모집 공고가 아닙니다.
+
 Editable Korean poster and internal operating review for the 2026–2027 program. Built from the supplied poster and director’s message, with no build dependencies.
 
 ## Run
