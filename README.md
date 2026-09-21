@@ -52,3 +52,9 @@ Unmodified logo sources:
 - https://arrc.kaist.ac.kr/assets/brand/arrc-logo.png
 
 The published header uses these official assets instead of the source illustration's embedded studio branding. Program-specific partner/support text remains draft content from the supplied poster.
+
+## Current program direction
+
+Target: finalize the announcement before the Chuseok holiday. Publication/application opening is a separate date still to be agreed; subsequent dates remain provisional.
+
+The current research theme is supporting face-to-face one-to-one conversations with AI glasses, Quest, and related devices, through information, visual context, and interaction support. Website examples are proposals, not fixed assignments or guaranteed device capabilities. The scope centers on face-to-face conversation. Device configurations and team ownership remain open for discussion.
