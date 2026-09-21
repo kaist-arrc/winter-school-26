@@ -57,7 +57,18 @@ The published header uses these official assets instead of the source illustrati
 
 Target: finalize the announcement before the Chuseok holiday. Publication/application opening is a separate date still to be agreed; subsequent dates remain provisional.
 
-The common research theme is “AR/XR로 돕는 1:1 대면 대화”: supporting face-to-face one-to-one conversations through information, visual context, and interaction support. Participants choose target devices according to their research focus and implementation approach; AI glasses and Quest are examples, not required hardware. Website examples are proposals, not fixed assignments or guaranteed device capabilities. Program benefits include access to research devices and support for using AI tools. Specific inventories and support arrangements remain to be finalized.
+The common research theme is “AR/XR로 돕는 1:1 대면 대화”: supporting face-to-face one-to-one conversations through information, visual context, and interaction support. AI glasses are presented as a primary device option because their first-person camera, microphone, audio, and—on supported models—display can support contextual, hands-free experiences. Participants still choose target devices according to their research focus and implementation approach; Quest and other XR devices remain valid options. Website examples are proposals, not fixed assignments or guaranteed device capabilities. Program benefits include access to research devices and support for using AI tools. Specific inventories and support arrangements remain to be finalized.
+
+### AI glasses landscape reviewed
+
+The program framing was checked on 2026-09-22 against current official developer and challenge material:
+
+- Meta positions AI glasses development around camera, audio, optional display, and hands-free mobile extensions: https://developers.meta.com/wearables/
+- Android XR distinguishes audio glasses, display glasses, wired XR glasses, and headsets, with capabilities and interaction varying by form factor: https://developer.android.com/develop/xr
+- Snap’s official Spectacles community maintains a hackathon showcase: https://developers.snap.com/spectacles/spectacles-community/hackathon-showcase
+- The IEEE SLT 2026 SmartGlasses Challenge focuses on egocentric multi-talker speech interaction: https://aslp-lab.github.io/SmartGlasses/
+
+These references support making AI glasses visible in the recruitment hook, asking teams to justify device choice, and judging a focused real-world interaction rather than hardware complexity. They do not establish which devices ARRC owns or can provide; inventory, SDK access, account setup, and support capacity still require internal confirmation.
 
 ## Two poster versions
 
