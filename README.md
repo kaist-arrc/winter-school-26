@@ -25,13 +25,13 @@ Open http://localhost:4173. Serve the repository directory, not its parent.
 - `index.html`: semantic poster content and internal review. Edit this to change defaults.
 - `styles.css`: colors, typography, layout, responsive and print styles.
 - `app.js`: text editing, local persistence, JSON exchange, standalone HTML export.
-- `assets/poster-reference.jpg`: user-supplied source; its top portion provides the decorative hero artwork. Artwork is raster, while poster text and cards are editable HTML.
+- `assets/poster-reference.jpg`: user-supplied source; retained only for comparison in the editor. Artwork is raster, while poster text and cards are editable HTML.
 
 ## Editorial status
 
 This is a redesigned editable reconstruction, not a pixel-exact tracing. The main program structure, dates, support details and evaluation criteria follow the source. The introduction adapts the director’s intent; the internal review contains new suggestions, marked unconfirmed. Verify all dates, funding/partner commitments, eligibility and application details before publication. The director’s relative launch timing conflicts with the poster’s late-October/early-November publicity window; no date was silently resolved. No registration link or unconfirmed quota was invented.
 
-The site is local; nothing has been published or pushed. JSON import uses text-only insertion and validates known field names.
+The public read-only poster is deployed with GitHub Pages. JSON import uses text-only insertion and validates known field names.
 
 ## GitHub Pages
 
@@ -42,3 +42,13 @@ After editing source content or styling, rebuild before committing:
 ```sh
 python3 scripts/build_public.py
 ```
+
+## Official institutional branding
+
+Institution name and contact details were checked against https://arrc.kaist.ac.kr/ and https://arrc.kaist.ac.kr/about on 2026-09-21. The center is the KAIST Augmented Reality Research Center (ARRC), within KAIST KI-ITAIC; contact: arrc@kaist.ac.kr.
+
+Unmodified logo sources:
+- https://arrc.kaist.ac.kr/assets/brand/kaist-logo.png
+- https://arrc.kaist.ac.kr/assets/brand/arrc-logo.png
+
+The published header uses these official assets instead of the source illustration's embedded studio branding. Program-specific partner/support text remains draft content from the supplied poster.

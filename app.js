@@ -96,18 +96,20 @@
       const cssNode = document.querySelector('#app-style');
       const scriptNode = document.querySelector('#app-script');
       const read = async url => { const response = await fetch(url); if (!response.ok) throw new Error('파일 읽기 실패'); return response; };
-      const imageUrl = document.querySelector('.hero-art img').src;
+      const imageUrls = [...new Set([...document.querySelectorAll('img')].map(img => img.src))];
       const [css, js, imageData] = await Promise.all([
         cssNode.tagName === 'LINK' ? read(cssNode.href).then(r => r.text()) : cssNode.textContent,
         scriptNode.src ? read(scriptNode.src).then(r => r.text()) : scriptNode.textContent,
-        imageUrl.startsWith('data:') ? imageUrl : read(imageUrl).then(r => r.blob()).then(blob => new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result); reader.onerror = reject; reader.readAsDataURL(blob); }))
+        Promise.all(imageUrls.map(async url => [url, url.startsWith('data:') ? url : await read(url).then(r => r.blob()).then(blob => new Promise((resolve, reject) => { const reader = new FileReader(); reader.onload = () => resolve(reader.result); reader.onerror = reject; reader.readAsDataURL(blob); }))]))
       ]);
       const clone = document.documentElement.cloneNode(true);
       const style = document.createElement('style'); style.id = 'app-style'; style.textContent = css;
       clone.querySelector('#app-style').replaceWith(style);
       const script = document.createElement('script'); script.id = 'app-script'; script.textContent = js;
       clone.querySelector('#app-script').replaceWith(script);
-      clone.querySelectorAll('img').forEach(img => img.src = imageData);
+      const embeddedImages = new Map(imageData);
+      const originals = [...document.querySelectorAll('img')];
+      clone.querySelectorAll('img').forEach((img, index) => img.src = embeddedImages.get(originals[index].src));
       clone.querySelector('body').dataset.storageKey = `arrc-export-${Date.now()}`;
       clone.querySelectorAll('[data-tab]').forEach(tab => { const selected = tab.dataset.tab === 'poster'; tab.setAttribute('aria-selected', String(selected)); tab.tabIndex = selected ? 0 : -1; });
       ['poster', 'review', 'reference'].forEach(name => { clone.querySelector(`#${name}-panel`).hidden = name !== 'poster'; });

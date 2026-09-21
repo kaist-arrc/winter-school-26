@@ -15,7 +15,7 @@ page = '''<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#093c76">
-<meta name="description" content="KAIST KI-ARRC 2026–2027 Winter Research Talent Program 운영계획(안). 온라인 아이디어 제안에서 현장 해커톤, 인턴 연구로 이어지는 단계형 연구경험 프로그램.">
+<meta name="description" content="KAIST 증강현실연구센터(ARRC) 2026–2027 Winter Research Talent Program 운영계획(안). 온라인 아이디어 제안에서 현장 해커톤, 인턴 연구로 이어지는 단계형 연구경험 프로그램.">
 <title>[작업 중] KAIST ARRC · Winter Research Talent Program</title>
 <link rel="stylesheet" href="styles.css">
 <style>body{padding:24px 0}.work-notice{max-width:1100px;margin:0 auto 18px;padding:16px 20px;border:1px solid #e2c785;border-left:4px solid #b58328;border-radius:5px;background:#fff8e8;color:#654b1c}.work-notice strong{display:block;font-size:16px;margin-bottom:5px}.work-notice p{margin:0;font-size:12px;line-height:1.8}@media(max-width:1136px){.work-notice{margin-left:18px;margin-right:18px}}@media(max-width:700px){body{padding:10px 0}.work-notice{margin:0 10px 12px;padding:12px 14px}}@media print{body{padding:0}.work-notice{margin:0 0 5mm;break-inside:avoid}}</style>
@@ -24,7 +24,10 @@ page = '''<!doctype html>
 ''' + poster + '\n</main></body></html>\n'
 (output / 'index.html').write_text(page)
 shutil.copy2(root / 'styles.css', output / 'styles.css')
-shutil.copy2(root / 'assets/poster-reference.jpg', output / 'assets/poster-reference.jpg')
+for name in ('kaist-logo.png', 'arrc-logo.png'):
+    shutil.copy2(root / 'assets' / name, output / 'assets' / name)
+# The original poster remains an editor reference, not a public branding asset.
+(output / 'assets/poster-reference.jpg').unlink(missing_ok=True)
 (output / '.nojekyll').touch()
 assert 'contenteditable' not in page
 assert 'app.js' not in page
