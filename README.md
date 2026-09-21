@@ -58,3 +58,11 @@ The published header uses these official assets instead of the source illustrati
 Target: finalize the announcement before the Chuseok holiday. Publication/application opening is a separate date still to be agreed; subsequent dates remain provisional.
 
 The common research theme is “AR/XR로 돕는 1:1 대면 대화”: supporting face-to-face one-to-one conversations through information, visual context, and interaction support. Participants choose target devices according to their research focus and implementation approach; AI glasses and Quest are examples, not required hardware. Website examples are proposals, not fixed assignments or guaranteed device capabilities. Program benefits include access to research devices and support for using AI tools. Specific inventories and support arrangements remain to be finalized.
+
+## Two poster versions
+
+- `teaser.html`: attention-focused poster, with a conversation hook, brief research directions, device choice, benefits and a link to details. Public URL: https://kaist-arrc.github.io/winter-school-26/teaser.html
+- `docs/index.html`: information-rich public program poster, generated from the source editor. Public URL: https://kaist-arrc.github.io/winter-school-26/
+- `teaser.css`: promotional poster layout. Both versions include a draft notice and use the official institution assets.
+
+Run `python3 scripts/build_public.py` after changing either version. Keep agreed program terms consistent between both sources. The promotional poster currently invites readers to view details; it does not present an application button while registration is unconfirmed.
