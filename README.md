@@ -1,0 +1,42 @@
+# ARRC Winter Research Talent Program
+
+Editable Korean poster and internal operating review for the 2026–2027 program. Built from the supplied poster and director’s message, with no build dependencies.
+
+## Run
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Open http://localhost:4173. Serve the repository directory, not its parent.
+
+- **포스터 편집**: click text to edit; use **편집 켜짐 / 미리보기** to toggle editing.
+- Edits save to this browser’s local storage. They do not change repository files or sync to colleagues.
+- **내용 저장 / 불러오기**: export/import editable content as JSON.
+- **HTML 내보내기**: download a standalone editable HTML, including the reference image, CSS and JavaScript. Its initial content becomes its reset baseline. Fonts use an optional Google Fonts import; offline system fonts are supported.
+- **인쇄 / PDF**: print the active view. The poster is designed for A3 portrait; select A3 and disable browser headers/footers. Longer edits may increase page count.
+- **운영 검토**: six editable internal review proposals based on the director’s message, explicitly separate from confirmed recruitment terms.
+- **원본 이미지**: view the source for comparison.
+
+## Files
+
+- `index.html`: semantic poster content and internal review. Edit this to change defaults.
+- `styles.css`: colors, typography, layout, responsive and print styles.
+- `app.js`: text editing, local persistence, JSON exchange, standalone HTML export.
+- `assets/poster-reference.jpg`: user-supplied source; its top portion provides the decorative hero artwork. Artwork is raster, while poster text and cards are editable HTML.
+
+## Editorial status
+
+This is a redesigned editable reconstruction, not a pixel-exact tracing. The main program structure, dates, support details and evaluation criteria follow the source. The introduction adapts the director’s intent; the internal review contains new suggestions, marked unconfirmed. Verify all dates, funding/partner commitments, eligibility and application details before publication. The director’s relative launch timing conflicts with the poster’s late-October/early-November publicity window; no date was silently resolved. No registration link or unconfirmed quota was invented.
+
+The site is local; nothing has been published or pushed. JSON import uses text-only insertion and validates known field names.
+
+## GitHub Pages
+
+The public site is built into `docs/` and deployed from the `main` branch `/docs` directory. The public poster is read-only: editor controls, local-storage editing, and the internal operating review are excluded. The source editor remains at the repository root for local use.
+
+After editing source content or styling, rebuild before committing:
+
+```sh
+python3 scripts/build_public.py
+```

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#093c76"><title>ARRC · Winter Research Talent Program</title>
+<link rel="stylesheet" href="styles.css" id="app-style">
+</head>
+<body>
+<header class="workspace no-print">
+  <a class="wordmark" href="#" aria-label="ARRC poster workspace">ARRC<span> / </span><small>RESEARCH TALENT PROGRAM</small></a>
+  <div class="workspace-right"><span class="draft-dot">운영계획 초안</span><span id="save-status" role="status">로컬 편집 준비됨</span></div>
+</header>
+<nav class="toolbar no-print" aria-label="작업 도구">
+  <div class="tabs" role="tablist" aria-label="보기 선택"><button id="tab-poster" role="tab" aria-selected="true" aria-controls="poster-panel" data-tab="poster">포스터 편집</button><button id="tab-review" role="tab" aria-selected="false" aria-controls="review-panel" data-tab="review" tabindex="-1">운영 검토 <span>06</span></button><button id="tab-reference" role="tab" aria-selected="false" aria-controls="reference-panel" data-tab="reference" tabindex="-1">원본 이미지</button></div>
+  <div class="actions"><button id="edit-toggle" aria-pressed="true">편집 켜짐</button><button id="import">불러오기</button><button id="export-json">내용 저장</button><button id="export-html">HTML 내보내기</button><button id="print" class="primary">인쇄 / PDF</button><button id="reset" class="icon-button" title="전체 편집 내용을 원래 초안으로 되돌리기">초기화</button></div>
+</nav>
+<main>
+<div class="page-note no-print"><span id="view-hint">문구를 클릭해 수정하세요. 변경 내용은 이 브라우저에 자동 저장됩니다.</span><span>2026—2027 <b> / </b> WINTER EDITION</span></div>
+<section id="poster-panel" role="tabpanel" aria-labelledby="tab-poster">
+<article class="poster" id="poster">
+  <div class="hero-art" role="img" aria-label="KAIST XR Experience Studio와 도시를 잇는 원본 포스터의 일러스트"><img src="assets/poster-reference.jpg" alt=""></div>
+  <div class="poster-body">
+  <div class="eyebrow"><span data-edit="eyebrow">KAIST KI-ARRC · OPEN XR RESEARCH PLATFORM</span><span class="draft" data-edit="draft">운영계획(안)</span></div>
+  <header class="poster-title"><p class="season" data-edit="season">2026–2027 WINTER</p><h1 data-edit="title">Research Talent Program</h1><h2 data-edit="subtitle">Symbiotic AIR4BTS 기반 단계형 연구경험 프로그램</h2><p class="tagline" data-edit="tagline">Beyond World Models toward Transferable Experience.</p><p class="intro" data-edit="intro">아이디어에서 실제 연구까지. 다양한 배경의 인재가 함께 연구문제를 풀고, 미래 XR 연구를 개척하는 열린 연구경험 프로그램입니다.</p></header>
+  <section class="poster-section"><div class="section-heading"><h3><span>01</span><b data-edit="goals-heading">운영 목표</b><small>Goals</small></h3><em data-edit="goals-motto">Experience Together, Grow Further</em></div>
+  <div class="grid four goals">
+  <div class="card"><span class="card-number">01 / DISCOVER</span><h4 data-edit="goal-1-title">가능성의 발견</h4><p data-edit="goal-1">우수 예비연구자를 조기에 발굴하고 단계적으로 연구경험을 제공합니다.</p></div>
+  <div class="card"><span class="card-number">02 / EXPERIENCE</span><h4 data-edit="goal-2-title">전이 가능한 경험</h4><p data-edit="goal-2">Symbiotic AIR4BTS를 중심으로 문화예술 속 K-재미의 포착·기억·전이·재현 연구경험을 제공합니다.</p></div>
+  <div class="card"><span class="card-number">03 / CONNECT</span><h4 data-edit="goal-3-title">연구로 이어지는 연결</h4><p data-edit="goal-3">해커톤–인턴–멘토링 연계를 통해 실제 연구를 수행할 기회를 제공합니다.</p></div>
+  <div class="card"><span class="card-number">04 / GROW</span><h4 data-edit="goal-4-title">함께 성장하는 연구</h4><p data-edit="goal-4">학생의 자율적 진로 탐색과 연구실의 인재 발굴을 동시에 지원합니다.</p></div>
+  </div></section>
+  <section class="poster-section"><div class="section-heading"><h3><span>02</span><b data-edit="flow-heading">프로그램 흐름</b><small>Program Flow</small></h3><em data-edit="flow-motto">From Ideas to Impact</em></div>
+  <div class="phase-labels"><span data-edit="phase-1">01 — 온라인 아이디어 제안</span><span data-edit="phase-2">02 — 현장 해커톤</span><span data-edit="phase-3">03 — 인턴 연구</span></div>
+  <div class="timeline">
+  <div class="step"><span class="step-no">1</span><h4 data-edit="step-1">홍보·연구주제 공지</h4><p data-edit="date-1">10월 말–11월 초</p></div>
+  <div class="step"><span class="step-no">2</span><h4 data-edit="step-2">온라인 모집</h4><p data-edit="date-2">~11/6</p></div>
+  <div class="step"><span class="step-no">3</span><h4 data-edit="step-3">온라인 평가</h4><p data-edit="date-3">~11/13</p><small data-edit="detail-3">제안 아이디어 서류심사</small></div>
+  <div class="step"><span class="step-no">4</span><h4 data-edit="step-4">해커톤 참가자 발표</h4><p data-edit="date-4">11/14</p></div>
+  <div class="step"><span class="step-no">5</span><h4 data-edit="step-5">KAIST 현장 해커톤</h4><p data-edit="date-5">11/21–22</p><small data-edit="detail-5">구현·시연·발표 평가</small></div>
+  <div class="step"><span class="step-no">6</span><h4 data-edit="step-6">인턴 선발·멘토 배정</h4><p data-edit="date-6">해커톤과 통합</p><small data-edit="detail-6">참가자·수상자 우선권</small></div>
+  <div class="step"><span class="step-no">7</span><h4 data-edit="step-7">12월 사전학습</h4><p data-edit="date-7">비동기</p></div>
+  <div class="step"><span class="step-no">8</span><h4 data-edit="step-8">Winter Research Internship</h4><p data-edit="date-8">2027. 1–2</p><small data-edit="detail-8">1개월·1월 또는 2월 트랙</small></div>
+  </div><p class="footnote" data-edit="schedule-note">※ 일정은 원본 운영계획(안) 기준이며 확정 전입니다. 12월은 학사일정과 연말 일정을 고려한 비동기 준비 기간입니다.</p></section>
+  <section class="poster-section"><div class="section-heading"><h3><span>03</span><b data-edit="details-heading">세부 운영</b><small>Program Details</small></h3></div>
+  <div class="grid four details">
+  <div class="card"><span class="letter">A</span><h4 data-edit="topic-title">연구주제</h4><p class="strong" data-edit="topic-lead">Symbiotic AIR4BTS</p><p data-edit="topic-body">K-재미의 포착·기억·전이·재현·공진화
+적용 분야: 문화예술</p><div class="card-bottom" data-edit="topic-tag">K-culture as a Living Experience</div></div>
+  <div class="card"><span class="letter">B</span><h4 data-edit="applicant-title">지원대상</h4><p data-edit="applicant-body">World Model, Physical AI, Wearable AR 다음을 개척하고 싶은 학생 및 지원자</p><p class="muted" data-edit="applicant-fields">Spatial AI, Embodied AI, AR, HCI, AI, Robotics, Design, Culture & Art 등</p><div class="card-bottom" data-edit="applicant-tag">New Possibilities for Human Experience</div></div>
+  <div class="card"><span class="letter">C</span><h4 data-edit="online-title">온라인 평가</h4><p class="strong" data-edit="online-lead">제안 아이디어 서류심사</p><ul><li data-edit="online-1">문제정의</li><li data-edit="online-2">독창성</li><li data-edit="online-3">실현가능성</li><li data-edit="online-4">연구 적합성</li></ul></div>
+  <div class="card"><span class="letter">D</span><h4 data-edit="hack-title">현장 해커톤</h4><p class="strong" data-edit="hack-lead">KAIST 현장 2일 집중형</p><ul><li data-edit="hack-1">구현·시연·발표 평가</li><li data-edit="hack-2">인턴 선발과 멘토 배정 통합</li></ul><div class="card-bottom" data-edit="hack-tag">Build Together, Create What’s Next</div></div>
+  </div></section>
+  <div class="grid two lower">
+  <section class="poster-section"><div class="section-heading"><h3><span>04</span><b data-edit="support-heading">재원 및 지원 체계</b><small>Support</small></h3></div><div class="grid two support"><div class="card"><h4 data-edit="support-1-title">대학교 재학생</h4><ul><li data-edit="support-1a">KI-ARRC 연구인건비 지원</li><li data-edit="support-1b">연구활동 및 멘토링 지원</li><li data-edit="support-1c">연구환경 제공</li></ul></div><div class="card"><h4 data-edit="support-2-title">휴학생 등 비재학생</h4><ul><li data-edit="support-2a">VIRNECT·KISTI 등 외부 협력기관 연계 지원</li><li data-edit="support-2b">기관별 자격·협약에 따름</li></ul></div></div><p class="footnote" data-edit="support-note">※ 세부 지급 조건 및 지원 내용은 소속 기관의 규정 및 협약에 따라 달라질 수 있습니다.</p></section>
+  <section class="poster-section"><div class="section-heading"><h3><span>05</span><b data-edit="evaluation-heading">평가 기준</b><small>Evaluation</small></h3></div><div class="evaluation"><div><span>◎</span><h4 data-edit="eval-1">문제이해력</h4><p data-edit="eval-1-en">Problem Understanding</p></div><div><span>↗</span><h4 data-edit="eval-2">학습력</h4><p data-edit="eval-2-en">Learning Ability</p></div><div><span>◉</span><h4 data-edit="eval-3">협업 및 소통</h4><p data-edit="eval-3-en">Collaboration & Communication</p></div><div><span>✧</span><h4 data-edit="eval-4">연구 잠재력</h4><p data-edit="eval-4-en">Research Potential</p></div></div></section>
+  </div>
+  <section class="poster-section key-section"><div class="section-heading"><h3><span>06</span><b data-edit="keys-heading">운영 포인트</b><small>Key Operation Points</small></h3></div><div class="key-content"><ul><li data-edit="key-1">해커톤은 경진대회가 아니라 인턴 선발형 research audition</li><li data-edit="key-2">온라인 단계는 아이디어 중심, 현장 단계는 구현 중심</li><li data-edit="key-3">해커톤과 인턴 선발·멘토 배정을 통합하여 운영 효율화</li><li data-edit="key-4">학생에게는 탐색–도전–연구의 성장 경로 제공</li><li data-edit="key-5">국제적 연구소 수준의 명확한 정보 구조와 공정한 선발 운영</li></ul><blockquote data-edit="closing">Different Cultures.
+Shared Experiences.
+A Kinder, Smarter World.</blockquote></div></section>
+  <footer class="poster-footer"><strong class="kaist">KAIST</strong><div><p data-edit="organizer">주관: KAIST KI-ARRC</p><p data-edit="sponsors">후원: KAIST Graduate School of Metaverse · 한국정보과학회 CGAI 소사이어티</p></div><div class="contact"><p data-edit="email">kiarrc@kaist.ac.kr</p><p data-edit="website">https://kiarrc.kaist.ac.kr</p></div></footer>
+  </div>
+</article>
+</section>
+<section id="review-panel" role="tabpanel" aria-labelledby="tab-review" hidden>
+  <article class="review-sheet"><div class="eyebrow">INTERNAL WORKING DOCUMENT <span class="draft">검토 제안 · 미확정</span></div><h1>좋은 연구경험을 위한<br>운영 설계 체크포인트</h1><p class="review-intro" data-edit="review-intro">일회성 인턴 모집을 넘어 개방형 XR 연구 플랫폼으로. 온라인 아이디어 제안 → 현장 해커톤 → 인턴 연구의 각 단계에서 학생의 성장과 연구실의 운영 가능성을 함께 확인합니다.</p><div class="review-callout"><strong>홍보 전 일정 조율 필요</strong><p data-edit="review-schedule">센터장님 메시지는 ‘다음 주 초 마무리·다음 주말 홍보 시작’을 요청하지만 원본에는 ‘10월 말–11월 초 홍보’로 기재되어 있습니다. 메시지 작성일과 실제 홍보 시작일을 확인하고 일정을 하나로 맞춰야 합니다.</p></div>
+  <div class="review-grid">
+  <section><span class="card-number">01 / CAPACITY</span><h2>실제 운영 가능성</h2><p data-edit="review-capacity">해커톤 정원과 인턴 정원을 별도로 정하고, 연구팀이 수용 가능한 인원에서 역산합니다. 공간·장비·데이터·행정 담당·예산을 홍보 전에 확정합니다.</p><label>확정할 사항</label><p class="decision" data-edit="decision-capacity">담당: 미정 / 해커톤 정원: 미정 / 인턴 정원: 미정 / 운영예산: 미정</p></section>
+  <section><span class="card-number">02 / RESEARCH TOPICS</span><h2>연구팀별 참여주제</h2><p data-edit="review-topics">팀별로 1쪽 과제 카드를 준비합니다. 연구질문, 필수·선택 역량, 제공 데이터와 장비, 2일 해커톤의 최소 결과물, 1개월 인턴의 확장 목표를 명시합니다. 실제 참여주제는 각 팀의 확인이 필요합니다.</p><label>확정할 사항</label><p class="decision" data-edit="decision-topics">참여 연구팀: 미정 / 주제 책임자: 미정 / 과제 카드 취합일: 미정</p></section>
+  <section><span class="card-number">03 / MENTORING</span><h2>멘토 부담과 지원체계</h2><p data-edit="review-mentors">주제별 주 멘토와 백업 멘토를 지정하고, 멘토당 수용 인원과 주간 투입시간을 먼저 합의합니다. 사전학습 공통자료·FAQ·정해진 질의 시간을 활용해 반복 문의를 줄입니다.</p><label>확정할 사항</label><p class="decision" data-edit="decision-mentors">멘토 배정: 미정 / 주간 투입시간: 미정 / 멘토당 인원: 미정</p></section>
+  <section><span class="card-number">04 / FAIR EVALUATION</span><h2>해커톤 평가방식</h2><p data-edit="review-evaluation">원본의 네 기준을 공통 루브릭으로 구체화합니다. 결과물의 완성도 외에 가설 설정, 피드백 반영, 개인별 기여, 다음 연구 제안을 관찰합니다. 팀 결과와 개인 평가를 구분하고, 복수 평가자의 독립 채점 후 편차를 조율합니다.</p><label>확정할 사항</label><p class="decision" data-edit="decision-evaluation">기준별 배점: 미정 / 평가자: 미정 / 개인 기여 기록 방식: 미정</p></section>
+  <section><span class="card-number">05 / CONTINUITY</span><h2>인턴 연구로의 연결</h2><p data-edit="review-continuity">해커톤 후 참가자의 주제 선호와 멘토의 수용 가능성을 함께 확인합니다. 인턴 확정 시 연구계획·주간 피드백·최종 공유회 일정을 안내하고, 후속 참여는 희망자 동의를 받아 연결합니다.</p><label>확정할 사항</label><p class="decision" data-edit="decision-continuity">매칭 방식: 미정 / 1월·2월 트랙 정원: 미정 / 최종 공유회: 미정</p></section>
+  <section><span class="card-number">06 / LAUNCH READINESS</span><h2>홍보 전 최종 확인</h2><p data-edit="review-launch">지원자격·신청방법·제출물·평가기준·지원조건·문의처를 공개 문안에 명시합니다. 외부 협력기관의 지원 및 후원 표기는 확인 후 확정하고, 신청 시 개인정보 수집과 결과물 사용 범위를 안내합니다.</p><label>확정할 사항</label><p class="decision" data-edit="decision-launch">신청 링크: 미정 / 공개 문안 승인: 미정 / 홍보 시작일: 미정</p></section>
+  </div><p class="review-footer">이 화면은 센터장님 메시지를 바탕으로 작성한 내부 검토 제안입니다. 확정된 모집 조건이 아닙니다. 포스터와 별도로 인쇄할 수 있습니다.</p></article>
+</section>
+<section id="reference-panel" role="tabpanel" aria-labelledby="tab-reference" hidden><figure class="reference"><img src="assets/poster-reference.jpg" alt="제공된 2026–2027 Winter Research Talent Program 운영계획 원본 포스터"><figcaption>제공된 원본 이미지 · 편집본은 텍스트와 레이아웃을 웹 요소로 재구성했습니다. 상단 일러스트는 원본 이미지입니다.</figcaption></figure></section>
+</main>
+<footer class="workspace-footer no-print"><span>ARRC / Ideas become research.</span><span>브라우저 자동 저장 · 다른 기기로 옮길 때는 ‘내용 저장’</span></footer>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+<script src="app.js" id="app-script"></script>
+</body></html>
