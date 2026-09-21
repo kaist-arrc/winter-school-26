@@ -22,3 +22,4 @@
 
 /* Device paths make AI glasses visible while preserving device choice. */
 .device-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:0 0 12px}.device-paths>div{padding:10px 12px;border:1px solid #cbddea;border-radius:4px;background:#fff}.device-paths span{display:block;font-size:8px;letter-spacing:1.2px;color:#4e7b9f;font-weight:700;margin-bottom:6px}.device-paths strong{display:block;font-size:11px;line-height:1.5;color:var(--navy)}.device-paths p{font-size:9px;line-height:1.6;color:var(--muted);margin:5px 0 0}@media(max-width:700px){.device-paths{grid-template-columns:1fr}}
+.online-format{display:block;margin-top:8px;font-size:9px;line-height:1.5;color:var(--blue)}.online-example-link{display:inline-block;margin-top:10px;color:var(--blue);font-size:10px;font-weight:700;text-decoration:none}.online-example-link:hover{text-decoration:underline}

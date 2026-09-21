@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">처음 만난 사람과의 대화를 돕는 AI 글래스</title>
+  <desc id="desc">맥락 감지, 개인 단서, 질문 지원의 세 장면으로 구성된 온라인 평가 아이디어 1장 예시</desc>
+  <rect width="1600" height="900" fill="#f4f9fd"/>
+  <text x="90" y="92" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#08396e">처음 만난 사람과의 대화를 돕는 AI 글래스</text>
+  <text x="90" y="135" font-family="Arial, sans-serif" font-size="19" fill="#58728a">낯선 개념을 이해하고, 자연스럽게 다음 질문으로 이어지도록</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="90" y="205" width="440" height="490" rx="18" fill="#fff" stroke="#c8dce9" stroke-width="3"/>
+    <rect x="580" y="205" width="440" height="490" rx="18" fill="#fff" stroke="#c8dce9" stroke-width="3"/>
+    <rect x="1070" y="205" width="440" height="490" rx="18" fill="#fff" stroke="#c8dce9" stroke-width="3"/>
+    <text x="125" y="255" font-size="17" font-weight="700" fill="#4e7b9f">01 · 맥락 감지</text>
+    <text x="615" y="255" font-size="17" font-weight="700" fill="#4e7b9f">02 · 개인 단서</text>
+    <text x="1105" y="255" font-size="17" font-weight="700" fill="#4e7b9f">03 · 질문 지원</text>
+    <circle cx="310" cy="390" r="72" fill="#e8f2f8" stroke="#8cb6d1" stroke-width="4"/>
+    <circle cx="270" cy="380" r="14" fill="#08396e"/><circle cx="350" cy="380" r="14" fill="#08396e"/>
+    <path d="M270 425 Q310 450 350 425" fill="none" stroke="#08396e" stroke-width="8" stroke-linecap="round"/>
+    <path d="M405 330 h78 v52 h-78 z" fill="#08396e"/><path d="M420 345 h48 M420 361 h34" stroke="#fff" stroke-width="5"/>
+    <path d="M235 520 Q310 465 385 520" fill="none" stroke="#8cb6d1" stroke-width="8"/>
+    <text x="155" y="610" font-size="18" fill="#113454">대화 중 낯선 용어를 감지</text>
+    <text x="155" y="645" font-size="16" fill="#61788f">카메라·마이크로 상황 파악</text>
+    <rect x="635" y="340" width="330" height="126" rx="12" fill="#08396e"/>
+    <text x="665" y="382" font-size="17" fill="#b6d8ef">CONTEXT CARD</text>
+    <text x="665" y="422" font-size="27" font-weight="700" fill="#fff">공간 컴퓨팅</text>
+    <text x="665" y="450" font-size="16" fill="#e1f0fa">컴퓨터와 공간을 함께 다루는 기술</text>
+    <path d="M690 520 h230" stroke="#8cb6d1" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="690" cy="520" r="18" fill="#147bc0"/><circle cx="920" cy="520" r="18" fill="#147bc0"/>
+    <text x="645" y="610" font-size="18" fill="#113454">상대방을 방해하지 않는</text>
+    <text x="645" y="645" font-size="18" fill="#113454">짧은 개인 단서 제공</text>
+    <path d="M1125 380 Q1155 340 1190 380 T1255 380 T1320 380" fill="none" stroke="#147bc0" stroke-width="8" stroke-linecap="round"/>
+    <rect x="1135" y="445" width="310" height="72" rx="36" fill="#e8f2f8" stroke="#b9d9ed" stroke-width="3"/>
+    <text x="1180" y="490" font-size="19" font-weight="700" fill="#08396e">이 부분을 더 물어볼까요?</text>
+    <rect x="1135" y="545" width="140" height="52" rx="26" fill="#08396e"/><text x="1180" y="579" font-size="17" fill="#fff">네, 질문하기</text>
+    <rect x="1290" y="545" width="155" height="52" rx="26" fill="#fff" stroke="#8cb6d1" stroke-width="3"/><text x="1328" y="579" font-size="17" fill="#4e7b9f">지금은 괜찮아요</text>
+    <text x="1135" y="645" font-size="18" fill="#113454">질문 타이밍을 선택지로 제안</text>
+  </g>
+  <text x="90" y="800" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0c5ca9">핵심 흐름</text>
+  <text x="90" y="838" font-family="Arial, sans-serif" font-size="20" fill="#113454">맥락 감지  →  개인 단서  →  질문 지원</text>
+</svg>

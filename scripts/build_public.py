@@ -1,9 +1,51 @@
 """Build the read-only GitHub Pages site from the editable source."""
 from pathlib import Path
 import shutil
+import html
+import re
+
+
+def parse_program_fields(path: Path) -> dict[str, str]:
+    """Read the simple key/value section used as the poster copy source."""
+    lines = path.read_text(encoding='utf-8').splitlines()
+    try:
+        start = lines.index('## poster-fields') + 1
+    except ValueError as exc:
+        raise ValueError(f'Missing ## poster-fields in {path}') from exc
+    fields: dict[str, str] = {}
+    for line in lines[start:]:
+        if line.startswith('## '):
+            break
+        if not line.strip():
+            continue
+        if ':' not in line:
+            raise ValueError(f'Malformed poster field: {line!r}')
+        key, value = line.split(':', 1)
+        key, value = key.strip(), value.strip()
+        if not key:
+            raise ValueError(f'Empty poster field key: {line!r}')
+        fields[key] = value.replace('\\n', '\n')
+    return fields
+
+
+def inject_program_fields(source: str, fields: dict[str, str]) -> str:
+    """Replace text inside elements marked with data-program-key."""
+    for key, value in fields.items():
+        if f'data-program-key="{key}"' not in source and f"data-program-key='{key}'" not in source:
+            continue
+        pattern = re.compile(
+            rf'(<(?P<tag>[A-Za-z][\w:-]*)\b[^>]*data-program-key=["\']{re.escape(key)}["\'][^>]*>).*?(</(?P=tag)>)',
+            re.DOTALL,
+        )
+        replacement = html.escape(value).replace('\n', '<br>')
+        source, count = pattern.subn(lambda match: match.group(1) + replacement + match.group(3), source, count=1)
+        if count != 1:
+            raise ValueError(f'No unique data-program-key target found for {key!r}')
+    return source
 
 root = Path(__file__).resolve().parent.parent
-source = (root / 'index.html').read_text()
+fields = parse_program_fields(root / 'content' / 'program.md')
+source = inject_program_fields((root / 'index.html').read_text(encoding='utf-8'), fields)
 poster = source.split('<section id="poster-panel" role="tabpanel" aria-labelledby="tab-poster">', 1)[1].split('<section id="review-panel"', 1)[0]
 # The panel wrapper closes immediately after the poster article.
 poster = poster.rsplit('</section>', 1)[0]
@@ -24,15 +66,24 @@ page = '''<!doctype html>
 <main>
 <aside class="work-notice" aria-label="작업 중 안내"><strong>작업 중인 초안입니다 · Work in progress</strong><p>추석 연휴 전 공고 확정을 목표로 프로그램 내용을 검토·수정하고 있습니다. 일정, 지원자격, 선발방식 및 지원 내용은 확정되지 않았으며 변경될 수 있습니다. 이 페이지는 최종 모집 공고가 아닙니다.</p></aside>
 ''' + poster + '\n</main></body></html>\n'
-(output / 'index.html').write_text(page)
+(output / 'index.html').write_text(page, encoding='utf-8')
 for name in ('styles.css', 'teaser.html', 'teaser.css'):
-    shutil.copy2(root / name, output / name)
+    if name == 'teaser.html':
+        teaser = inject_program_fields((root / name).read_text(encoding='utf-8'), fields)
+        (output / name).write_text(teaser, encoding='utf-8')
+    else:
+        shutil.copy2(root / name, output / name)
 for name in ('kaist-logo.png', 'arrc-logo.png'):
     shutil.copy2(root / 'assets' / name, output / 'assets' / name)
+output_content = output / 'content'
+output_content.mkdir(parents=True, exist_ok=True)
+shutil.copy2(root / 'content' / 'online-evaluation-submission-example.md', output_content / 'online-evaluation-submission-example.md')
+shutil.copy2(root / 'content' / 'online-evaluation-example.svg', output_content / 'online-evaluation-example.svg')
 # The original poster remains an editor reference, not a public branding asset.
 (output / 'assets/poster-reference.jpg').unlink(missing_ok=True)
 (output / '.nojekyll').touch()
 assert 'contenteditable' not in page
 assert 'app.js' not in page
 assert 'review-panel' not in page
+assert '온라인 모집' in page
 print('Built read-only public poster in docs/')

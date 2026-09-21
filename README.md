@@ -22,6 +22,9 @@ Open http://localhost:4173. Serve the repository directory, not its parent.
 
 ## Files
 
+- `content/program.md`: single source of truth for the public schedule, program flow, online evaluation format and poster copy.
+- `content/online-evaluation-submission-example.md`: applicant-facing submission template and completed example.
+- `content/online-evaluation-example.svg`: editable one-page concept-board example linked from the submission document.
 - `index.html`: semantic poster content and internal review. Edit this to change defaults.
 - `styles.css`: colors, typography, layout, responsive and print styles.
 - `app.js`: text editing, local persistence, JSON exchange, standalone HTML export.
@@ -42,6 +45,8 @@ After editing source content or styling, rebuild before committing:
 ```sh
 python3 scripts/build_public.py
 ```
+
+The builder reads `content/program.md`, injects its labeled fields into generated copies of both poster sources, and writes the read-only pages to `docs/`. The public submission example and editable SVG are copied to `docs/content/`.
 
 ## Official institutional branding
 
