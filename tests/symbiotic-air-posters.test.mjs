@@ -35,3 +35,15 @@ test('the teaser pairs the in-person meeting message with its generated hero ima
   assert.match(teaser, /assets\/symbiotic-air-face-to-face\.png/);
   assert.match(builder, /'symbiotic-air-face-to-face\.png'/);
 });
+
+test('the teaser presents live social AR beyond a camera query', async () => {
+  const teaser = await read('teaser.html');
+
+  assert.match(teaser, /질문을 넘어/);
+  assert.match(teaser, /공유된 맥락/);
+  assert.match(teaser, /순간의 입력/);
+  assert.match(teaser, /공간·3D 표현/);
+  assert.match(teaser, /동의·프라이버시/);
+  assert.match(teaser, /class="research-frontier"/);
+  assert.match(teaser, /class="design-boundaries"/);
+});
