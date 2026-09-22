@@ -73,7 +73,7 @@ for name in ('styles.css', 'teaser.html', 'teaser.css'):
         (output / name).write_text(teaser, encoding='utf-8')
     else:
         shutil.copy2(root / name, output / name)
-for name in ('kaist-logo.png', 'arrc-logo.png'):
+for name in ('kaist-logo.png', 'arrc-logo.png', 'symbiotic-air-face-to-face.png'):
     shutil.copy2(root / 'assets' / name, output / 'assets' / name)
 output_content = output / 'content'
 output_content.mkdir(parents=True, exist_ok=True)
