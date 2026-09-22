@@ -47,3 +47,15 @@ test('the teaser presents live social AR beyond a camera query', async () => {
   assert.match(teaser, /class="research-frontier"/);
   assert.match(teaser, /class="design-boundaries"/);
 });
+
+test('the teaser gives hackathon and internship equal visual priority in the program flow', async () => {
+  const teaser = await read('teaser.html');
+  const coreSteps = teaser.match(/class="path-step path-step--core"/g) ?? [];
+
+  assert.equal(coreSteps.length, 2);
+  assert.match(teaser, /CORE EXPERIENCE/);
+  assert.match(teaser, /현장<br>해커톤/);
+  assert.match(teaser, /data-program-key="teaser-flow-3">인턴<br>연구/);
+  assert.doesNotMatch(teaser, /data-program-key="teaser-flow-note"/);
+  assert.equal((teaser.match(/class="path-stage-short">CORE</g) ?? []).length, 2);
+});
