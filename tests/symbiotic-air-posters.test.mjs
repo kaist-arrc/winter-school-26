@@ -77,3 +77,29 @@ test('the posters connect the center vision to a validated research path', async
   assert.match(teaser, /발견·구현·검증/);
   assert.match(teaser, /자산화·확장/);
 });
+
+test('the hackathon is a supported two-person-team research sprint', async () => {
+  const [detail, teaser] = await Promise.all([
+    read('index.html'),
+    read('teaser.html'),
+  ]);
+
+  assert.match(detail, /온라인 공모를 바탕으로 센터가 2인 1팀으로 구성/);
+  assert.match(detail, /기본 소프트웨어 플랫폼/);
+  assert.match(detail, /개발용 안경 기기/);
+  assert.match(detail, /개발 컴퓨터/);
+  assert.match(detail, /AI 계정/);
+  assert.match(teaser, /2인 1팀/);
+});
+
+test('the hackathon agenda and selection sizes are visible', async () => {
+  const [detail, program] = await Promise.all([
+    read('index.html'),
+    read('content/program.md'),
+  ]);
+
+  assert.match(program, /hackathon-capacity: 16–30명/);
+  assert.match(program, /internship-capacity: 7–10명/);
+  assert.match(detail, /09:00–10:00/);
+  assert.match(detail, /17:00/);
+});
