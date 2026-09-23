@@ -59,3 +59,21 @@ test('the teaser gives hackathon and internship equal visual priority in the pro
   assert.doesNotMatch(teaser, /data-program-key="teaser-flow-note"/);
   assert.equal((teaser.match(/class="path-stage-short">CORE</g) ?? []).length, 2);
 });
+
+test('the posters connect the center vision to a validated research path', async () => {
+  const [detail, teaser] = await Promise.all([
+    read('index.html'),
+    read('teaser.html'),
+  ]);
+
+  assert.match(detail, /Symbiotic AIR4BTS/);
+  assert.match(detail, /작지만 의미 있는 문제/);
+  assert.match(detail, /해커톤에서 구현·검증/);
+  assert.match(detail, /인턴 연구로 확장/);
+  assert.match(teaser, /Symbiotic AIR4BTS/);
+  assert.match(teaser, /경험 증거 포착/);
+  assert.match(teaser, /모델·XR 자산화/);
+  assert.match(teaser, /새 맥락에서 재구성·증강/);
+  assert.match(teaser, /발견·구현·검증/);
+  assert.match(teaser, /자산화·확장/);
+});
