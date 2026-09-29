@@ -1,6 +1,6 @@
 # ARRC Winter Research Talent Program
 
-> **작업 중 / Work in progress.** 프로그램 내용은 검토·수정 중이며 일정과 모집 조건은 미확정입니다. 최종 모집 공고가 아닙니다.
+Public-facing program posters with a small version date in each footer. The source editor retains a separate internal review panel.
 
 Editable Korean poster and internal operating review for the 2026–2027 program. Built from the supplied poster and director’s message, with no build dependencies.
 
@@ -60,7 +60,7 @@ The published header uses these official assets instead of the source illustrati
 
 ## Current program direction
 
-Target: finalize the announcement before the Chuseok holiday. Publication/application opening is a separate date still to be agreed; subsequent dates remain provisional.
+The public pages present the current program information without draft banners. Registration links have not been supplied; contact information remains available.
 
 The program is open to KAIST undergraduate and graduate students. Applicants must specify a one-to-one conversation situation × device: work/research meetings (goal-oriented discussion), personal discussion (general discussion), or teaching/order-taking (emphasis on one-way communication); paired with camera + audio devices, Lightweight (camera + small display: Rokid AR Glasses), or Immersive (Quest 3).
 
@@ -80,7 +80,7 @@ These references support making AI glasses visible in the recruitment hook, aski
 
 - `teaser.html`: attention-focused poster, with a conversation hook, brief research directions, device choice, benefits and a link to details. Public URL: https://kaist-arrc.github.io/winter-school-26/teaser.html
 - `docs/index.html`: information-rich public program poster, generated from the source editor. Public URL: https://kaist-arrc.github.io/winter-school-26/
-- `teaser.css`: promotional poster layout. Both versions include a draft notice and use the official institution assets.
+- `teaser.css`: promotional poster layout. Both versions show their version date in the footer and use the official institution assets.
 
 Run `python3 scripts/build_public.py` after changing either version. Keep agreed program terms consistent between both sources. The promotional poster currently invites readers to view details; it does not present an application button while registration is unconfirmed.
 
