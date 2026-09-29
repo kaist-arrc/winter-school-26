@@ -62,8 +62,9 @@ The published header uses these official assets instead of the source illustrati
 
 Target: finalize the announcement before the Chuseok holiday. Publication/application opening is a separate date still to be agreed; subsequent dates remain provisional.
 
-The common research theme is “AR/XR로 돕는 1:1 대면 대화”: supporting face-to-face one-to-one conversations through information, visual context, and interaction support. AI glasses are presented as a primary device option because their first-person camera, microphone, audio, and—on supported models—display can support contextual, hands-free experiences. Participants still choose target devices according to their research focus and implementation approach; Quest and other XR devices remain valid options. Website examples are proposals, not fixed assignments or guaranteed device capabilities. Program benefits include access to research devices and support for using AI tools. Specific inventories and support arrangements remain to be finalized.
+The program is open to KAIST undergraduate and graduate students. Applicants must specify a one-to-one conversation situation × device: work/research meetings (goal-oriented discussion), personal discussion (general discussion), or teaching/order-taking (emphasis on one-way communication); paired with camera + audio devices, Lightweight (camera + small display: Rokid AR Glasses), or Immersive (Quest 3).
 
+ARRC collects hackathon ideas, provides libraries or a basic framework tailored to those ideas, and participants use them to develop over two days. Support includes two days of pay at the student personnel rate appropriate to the participant's position, meals and snacks, development devices/computers, and AI accounts. Accommodation is not provided.
 ### AI glasses landscape reviewed
 
 The program framing was checked on 2026-09-22 against current official developer and challenge material:

@@ -3,7 +3,7 @@
   <desc id="desc">맥락 감지, 개인 단서, 질문 지원의 세 장면으로 구성된 온라인 평가 아이디어 1장 예시</desc>
   <rect width="1600" height="900" fill="#f4f9fd"/>
   <text x="90" y="92" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#08396e">처음 만난 사람과의 대화를 돕는 AI 글래스</text>
-  <text x="90" y="135" font-family="Arial, sans-serif" font-size="19" fill="#58728a">낯선 개념을 이해하고, 자연스럽게 다음 질문으로 이어지도록</text>
+  <text x="90" y="135" font-family="Arial, sans-serif" font-size="19" fill="#58728a">개인 논의 × Lightweight (Rokid AR Glasses) · 카메라 + 작은 디스플레이</text>
   <g font-family="Arial, sans-serif">
     <rect x="90" y="205" width="440" height="490" rx="18" fill="#fff" stroke="#c8dce9" stroke-width="3"/>
     <rect x="580" y="205" width="440" height="490" rx="18" fill="#fff" stroke="#c8dce9" stroke-width="3"/>
@@ -17,7 +17,7 @@
     <path d="M405 330 h78 v52 h-78 z" fill="#08396e"/><path d="M420 345 h48 M420 361 h34" stroke="#fff" stroke-width="5"/>
     <path d="M235 520 Q310 465 385 520" fill="none" stroke="#8cb6d1" stroke-width="8"/>
     <text x="155" y="610" font-size="18" fill="#113454">대화 중 낯선 용어를 감지</text>
-    <text x="155" y="645" font-size="16" fill="#61788f">카메라·마이크로 상황 파악</text>
+    <text x="155" y="645" font-size="16" fill="#61788f">센터 프레임워크로 맥락 입력</text>
     <rect x="635" y="340" width="330" height="126" rx="12" fill="#08396e"/>
     <text x="665" y="382" font-size="17" fill="#b6d8ef">CONTEXT CARD</text>
     <text x="665" y="422" font-size="27" font-weight="700" fill="#fff">공간 컴퓨팅</text>
