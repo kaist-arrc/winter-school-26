@@ -83,3 +83,7 @@ These references support making AI glasses visible in the recruitment hook, aski
 - `teaser.css`: promotional poster layout. Both versions include a draft notice and use the official institution assets.
 
 Run `python3 scripts/build_public.py` after changing either version. Keep agreed program terms consistent between both sources. The promotional poster currently invites readers to view details; it does not present an application button while registration is unconfirmed.
+
+## AIR4BTS concept references
+
+Both posters link to three annotated original diagrams in `assets/air4bts_woo/`: the AIR–AMI–BTS framework, adaptive experience transfer, and PACES. `scripts/build_public.py` copies only these selected originals into `docs/assets/air4bts_woo/`. The remaining supplied images stay as local reference material. The posters distinguish this long-term research vision from the two-day, one-to-one conversation prototype scope.

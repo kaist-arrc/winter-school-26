@@ -75,6 +75,16 @@ for name in ('styles.css', 'teaser.html', 'teaser.css'):
         shutil.copy2(root / name, output / name)
 for name in ('kaist-logo.png', 'arrc-logo.png', 'symbiotic-air-face-to-face.png'):
     shutil.copy2(root / 'assets' / name, output / 'assets' / name)
+# Publish only the concept references linked from the posters, preserving originals.
+reference_names = (
+    '29405226-2EC3-4148-92DE-F0D3CD0B64FE.png',
+    'iOS 이미지 (4).jpg',
+    '7C35FF8E-DB95-42DA-A416-F18C9A2E47D7.png',
+)
+reference_output = output / 'assets' / 'air4bts_woo'
+reference_output.mkdir(parents=True, exist_ok=True)
+for name in reference_names:
+    shutil.copy2(root / 'assets' / 'air4bts_woo' / name, reference_output / name)
 output_content = output / 'content'
 output_content.mkdir(parents=True, exist_ok=True)
 shutil.copy2(root / 'content' / 'online-evaluation-submission-example.md', output_content / 'online-evaluation-submission-example.md')
