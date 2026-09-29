@@ -27,9 +27,9 @@ flow-date-6: 비동기
 flow-step-7: Winter Research Internship
 flow-date-7: 2027. 1–2
 flow-detail-7: 인턴십 7–10명 · 1개월·1월 또는 2월 트랙
-phase-1: 01 — 온라인 모집·평가
-phase-2: 02 — 현장 해커톤 · 16–30명
-phase-3: 03 — 인턴 연구 · 7–10명
+phase-1: 01 · 온라인 모집·평가
+phase-2: 02 · 현장 해커톤 · 16–30명
+phase-3: 03 · 인턴 연구 · 7–10명
 hackathon-capacity: 16–30명
 internship-capacity: 7–10명
 hackathon-team: 온라인 공모를 바탕으로 센터가 2인 1팀으로 구성
