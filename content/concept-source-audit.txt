@@ -1,0 +1,87 @@
+AIR4BTS 원본 대조·보완 기록 (2026.09.30)
+
+방법
+원본 이미지별로 읽기 전용 감사 에이전트 1명씩, 총 3명이 독립 대조했습니다.
+주 에이전트가 공통 HTML을 수정해 편집 충돌을 피했습니다.
+1차 누락 수집 → 보완 → 2차 재대조 → 추가 수정 → 3차 최종 재대조를 수행했습니다.
+최종 담당자 3명 모두 담당 원본에서 추가 의미상 누락·왜곡을 발견하지 않았다고 보고했습니다.
+41개 감사 항목 중 40개를 반영·확인했고, 1개(T13)는 다른 원본의 출처 확인 후 철회했습니다.
+이는 의미 보존 감사이며, 모든 장식이나 영문 문구를 그대로 복제한 것은 아닙니다.
+
+전체 구조 원본: 29405226-2EC3-4148-92DE-F0D3CD0B64FE.png
+O1 WISE 비전과 AIR4BTS 프레임워크 관계: 반영
+O2 AIR·AMI·BTS 풀네임과 시스템 역할: 반영
+O3 목적·권리·목표·맥락: 반영
+O4 선택적 센싱·동적 SLAM·인식·맥락 추론: 반영
+O5 착용형·환경 멀티모달 센싱과 네 센서: 3차 최종 반영 확인
+O6 월드 모델의 객체·공간·에이전트·동역학: 반영
+O7 경험 모델의 행위자·목표·행동·결과·증거: 반영
+O8 모델 결합과 3D/4D·장면 그래프·지식 그래프·어포던스: 반영
+O9 AMI↔BTS 재사용·상호운용 단위: 반영
+O10 적용 가능성·위험/권리·불확실성 검증: 반영
+O11 Adaptive XR와 적용·제약·미전이: 반영
+O12 측정 가능한 목표 효용과 평가 다섯 축: 반영
+O13 네 갱신 대상과 측정 결과·피드백 루프: 반영
+O14 비전·제안 프레임워크/메커니즘/모델/객체·평가·가설 구분: 반영
+O15 인간·AI 역량의 장기 상호 발전 가설: 반영
+O16 목적·권리·효용 제약 아래 최소 센싱/증강: 반영
+최종 판정: O1–O16 PASS
+
+경험 전이 원본: iOS 이미지 (4).jpg (9개 패널 모두 검사)
+T1 세계 이해와 경험 전이의 연구 문제 구분: 반영
+T2 기존 구성 요소와 맥락 간 전이의 연구 공백: 반영
+T3 WISE·환경 센싱·신뢰 평가·상호작용 정책 갱신: 최종 보완
+T4 증거≠경험, 시각·음성·움직임·시선·상호작용: 반영
+T5 상황화된 장면·이벤트 그래프와 각 필드: 반영
+T6 증거·시간·신뢰도·출처 메타데이터: 반영
+T7 XR 경험 자산 여섯 층: 반영
+T8 콘텐츠≠경험 자산, 제안 교환 객체: 반영
+T9 조정 후 최소한의 XR 증강: 반영
+T10 프라이버시·안전·자원·사람의 부담: 반영
+T11 최소 충분 증거·최소 유효 증강·성과/학습/유지/안전: 반영
+T12 로컬 우선과 사람의 선택권·통제권: 반영
+T13 다섯 PACES 단계가 이 9패널에 없다는 지적: 철회
+    별도 PACES 원본에 직접 있는 다섯 단계임을 확인하고 출처를 명시했습니다.
+T14 충분 증거·표현·선택적 전이·효용·자제·반복적 상호 적응 연구 질문: 반영
+T15 K-태권도·문화/박물관·업무·일상 활용 분야: 반영
+T16 Existing XR Stack → Experience Asset Interchange → Transfer/Utility/Trust Metadata → Experience Interoperability: 최종 수정
+    Schema 오독을 Interchange로 교정하고 기술 스택을 이미 제정된 표준으로 표현하지 않았습니다.
+최종 판정: T1–T12·T14–T16 PASS, T13 철회
+
+PACES 원본: 7C35FF8E-DB95-42DA-A416-F18C9A2E47D7.png
+P1 WISE AIR 정의와 PACES 제어 역할: 반영
+P2 현실 욕구→현재 우려→대안→미래 흐름: 최종 보완
+P3 CCTV/AIR Glasses 조건 비교: 반영, 보편적 사실로 단정하지 않음
+P4 네 보호 원칙과 주변인 권리·선택적 보호 강화: 반영
+P5 다섯 제어 단계·여섯 증거 종류·네 변환·세 검증·세 효용: 반영
+P6 제어 평면과 데이터/경험 평면: 반영
+P7 맥락 인식형 동적 SLAM·AMI 생성/저장/색인/관리/출처: 최종 보완
+P8 개인·주변인·사회 세 수혜 범주와 평가 갱신 루프: 반영
+P9 업무·건강·여행·취미 활용 예시: 2차에서 새로 발견 후 보완
+최종 판정: P1–P9 PASS
+
+판독·출처 처리
+- 원본의 깨진 소형 문서 아이콘 라벨은 임의 복원하지 않고 읽히는 질문(누구의 데이터?)으로 설명했습니다.
+- Reduce는 불필요한 정보 제거·개입 축소로 교정했습니다.
+- Retention의 측정 대상을 임의로 좁히지 않았습니다.
+- 원본마다 다른 모델 필드와 평가 축을 출처별로 구분했습니다.
+- Local-first의 구체적 구현 설명은 원칙의 해석임을 밝혔으며 기능 보장을 하지 않습니다.
+- 해커톤 예시와 장기 연구 비전은 분리했습니다.
+- 원본 이미지와 교수님 PDF는 수정하지 않았고 PDF 전체를 공개하지 않았습니다.
+
+검증
+- 공개 사이트 빌드 및 게시 경로·섹션·이미지·스타일 링크 검증 3개 통과.
+- 상세 영역 6개를 펼쳐 데스크톱/모바일 화면을 직접 확인.
+- 기존 문구 기반 Node 테스트 8개는 작업 전부터 실패한 상태로 유지(별도 정비 필요):
+  the detail poster explicitly frames Symbiotic AIR as reciprocal in-person support
+  the teaser uses a face-to-face meeting rather than a chat exchange
+  the teaser pairs the in-person meeting message with its generated hero image
+  the teaser presents live social AR beyond a camera query
+  the teaser gives hackathon and internship equal visual priority in the program flow
+  the posters connect the center vision to a validated research path
+  the hackathon is a supported two-person-team research sprint
+  the hackathon agenda and selection sizes are visible
+
+주요 결과물: concepts/index.html / concepts/concepts.css
+미리보기: http://localhost:4173/concepts/
+공개 게시 경로: /winter-school-26/concepts/ (포스터의 기존 개념 이미지 링크를 대체)

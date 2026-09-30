@@ -92,7 +92,7 @@ page = '''<!doctype html>
 </head><body>
 <nav class="poster-versions no-print" aria-label="포스터 버전"><span>WINTER RESEARCH TALENT PROGRAM</span><div><a href="../">01 홍보형</a><a href="./" aria-current="page">02 상세형</a></div></nav>
 <main>
-''' + re.sub(r'((?:href|src)=")(assets/|content/)', r'\1../\2', poster) + '\n</main></body></html>\n'
+''' + re.sub(r'((?:href|src)=")(assets/|content/|concepts/)', r'\1../\2', poster) + '\n</main></body></html>\n'
 details_output = output / 'details'
 details_output.mkdir(parents=True, exist_ok=True)
 (details_output / 'index.html').write_text(add_social_metadata(page, 'details/'), encoding='utf-8')
@@ -118,6 +118,20 @@ reference_output = output / 'assets' / 'air4bts_woo'
 reference_output.mkdir(parents=True, exist_ok=True)
 for name in reference_names:
     shutil.copy2(root / 'assets' / 'air4bts_woo' / name, reference_output / name)
+# Publish the text-first concept guide and its explicitly curated illustrations.
+concept_output = output / 'concepts'
+concept_output.mkdir(parents=True, exist_ok=True)
+concept_page = (root / 'concepts' / 'index.html').read_text(encoding='utf-8')
+(concept_output / 'index.html').write_text(add_social_metadata(concept_page, 'concepts/'), encoding='utf-8')
+shutil.copy2(root / 'concepts' / 'concepts.css', concept_output / 'concepts.css')
+illustration_names = (
+    'air-observer', 'experience-scenes', 'bts-context', 'human-ai',
+    'replay-workshop', 'transfer-workshop', 'paces-everyday',
+)
+illustration_output = output / 'assets' / 'concept-illustrations'
+illustration_output.mkdir(parents=True, exist_ok=True)
+for name in illustration_names:
+    shutil.copy2(root / 'assets' / 'concept-illustrations' / f'{name}.webp', illustration_output / f'{name}.webp')
 # The original poster remains an editor reference, not a public branding asset.
 (output / 'assets/poster-reference.jpg').unlink(missing_ok=True)
 (output / '.nojekyll').touch()
