@@ -5,6 +5,34 @@ import html
 import re
 
 
+def add_social_metadata(source: str, route: str) -> str:
+    """Use each page's title and description for server-readable share previews."""
+    base = 'https://kaist-arrc.github.io/winter-school-26/'
+    title = re.search(r'<title>(.*?)</title>', source).group(1)
+    description = re.search(r'<meta name="description" content="([^"]*)">', source).group(1)
+    image = base + 'assets/og-image.png'
+    alt = 'XR·AI로, 사람과 사람을 더 가깝게. KAIST 해커톤 11월 21–22일, 신청 마감 11월 6일.'
+    metadata = f'''<link rel="canonical" href="{base}{route}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="KAIST ARRC">
+<meta property="og:title" content="{html.escape(html.unescape(title), quote=True)}">
+<meta property="og:description" content="{description}">
+<meta property="og:url" content="{base}{route}">
+<meta property="og:image" content="{image}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{alt}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{html.escape(html.unescape(title), quote=True)}">
+<meta name="twitter:description" content="{description}">
+<meta name="twitter:image" content="{image}">
+<meta name="twitter:image:alt" content="{alt}">
+'''
+    return source.replace('</head>', metadata + '</head>', 1)
+
+
 def parse_program_fields(path: Path) -> dict[str, str]:
     """Read the simple key/value section used as the poster copy source."""
     lines = path.read_text(encoding='utf-8').splitlines()
@@ -67,17 +95,18 @@ page = '''<!doctype html>
 ''' + re.sub(r'((?:href|src)=")(assets/|content/)', r'\1../\2', poster) + '\n</main></body></html>\n'
 details_output = output / 'details'
 details_output.mkdir(parents=True, exist_ok=True)
-(details_output / 'index.html').write_text(page, encoding='utf-8')
+(details_output / 'index.html').write_text(add_social_metadata(page, 'details/'), encoding='utf-8')
 for name in ('styles.css', 'teaser.html', 'teaser.css'):
     if name == 'teaser.html':
         teaser = inject_program_fields((root / name).read_text(encoding='utf-8'), fields)
         teaser = teaser.replace('href="index.html"', 'href="details/"').replace('href="teaser.html"', 'href="./"')
+        teaser = add_social_metadata(teaser, '')
         (output / 'index.html').write_text(teaser, encoding='utf-8')
         # Retain the former promotional URL for existing links.
         (output / name).write_text(teaser, encoding='utf-8')
     else:
         shutil.copy2(root / name, output / name)
-for name in ('kaist-logo.png', 'arrc-logo.png', 'symbiotic-air-face-to-face.png'):
+for name in ('kaist-logo.png', 'arrc-logo.png', 'symbiotic-air-face-to-face.png', 'og-image.png'):
     shutil.copy2(root / 'assets' / name, output / 'assets' / name)
 # Publish only the concept references linked from the posters, preserving originals.
 reference_names = (
