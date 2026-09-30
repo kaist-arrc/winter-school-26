@@ -3,6 +3,7 @@
 이 문서는 외부 공개용 일정과 포스터 문구의 기준 문서입니다.
 
 ## poster-fields
+<!-- kaist학사일정:  10-19(월) ~ 10-23(금)	가을학기 중간고사 / 12-14(월) ~ 12-18(금)	가을학기 학기말 시험 -->
 
 optional-portfolio: 선택 제출 · CV 또는 포트폴리오: 파일(1개·최대 10MB) 또는 링크
 
@@ -17,20 +18,18 @@ flow-step-3: 결과 발표
 flow-date-3: 11/13
 flow-step-4: KAIST 현장 해커톤
 flow-date-4: 11/21–22
-flow-detail-4: 16–30명 선발 · 온라인 공모 기반 2인 1팀
+flow-detail-4: 온라인 공모 기반 2인 1팀
 flow-step-5: 인턴 선발·멘토 배정
 flow-date-5: 해커톤과 통합
-flow-detail-5: 해커톤과 통합 · 인턴십 7–10명 선발 예정
+flow-detail-5: 우수 참가자 수상 혜택 · 멘토 배정
 flow-step-6: 12월 사전학습
 flow-date-6: 비동기
 flow-step-7: Winter Research Internship
 flow-date-7: 2027. 1–2
-flow-detail-7: 인턴십 7–10명 · 1개월·1월 또는 2월 트랙
+flow-detail-7: 수상자 대상 · 2개월 인턴십 기회 · 260만원 상당
 phase-1: 01 · 모집·결과 발표
-phase-2: 02 · 현장 해커톤 · 16–30명
-phase-3: 03 · 인턴 연구 · 7–10명
-hackathon-capacity: 16–30명
-internship-capacity: 7–10명
+phase-2: 02 · 현장 해커톤
+phase-3: 03 · 수상자 인턴 연구
 hackathon-team: 온라인 공모를 바탕으로 센터가 2인 1팀으로 구성
 teaser-flow-1: 모집·\n결과 발표
 teaser-flow-2: 현장\n해커톤
@@ -46,20 +45,26 @@ online-5: 활용 기기 종류·선택 이유 및 구현 범위 (필수)
 online-format: 제출 형식 · 1장 이미지(PNG/JPG 또는 1페이지 PDF) + 요약문
 online-summary: 아이디어에는 어떤 상황 × 어떤 기기를 활용할지 반드시 명시합니다. 그래픽 완성도보다 해당 대화에서 어떤 도움을 언제 제공하는지가 중요합니다.
 online-example-title: 작성 예시 · 처음 만난 사람과의 대화를 돕는 AI 글래스
-applicant-body: KAIST 소속 학부생 및 대학원생
+applicant-body: 대학 학부생 및 대학원생 (KAIST 외 대학 포함)
 scenario-meeting: 업무/연구 회의 · 목표를 가진 논의
 scenario-personal: 개인 논의 · 일반적인 논의
 scenario-oneway: 강의 혹은 주문 받기 · 일방향이 강조된 상황
-device-ai-title: 카메라 + 오디오 기기
-device-ai-body: 카메라와 오디오를 활용한 대화 지원
+device-ai-title: Ray-Ban Meta · 디스플레이 없음
+device-ai-body: 카메라 + 오디오로 대화를 지원하는 디스플레이 없는 기기
 device-display-title: Lightweight · Rokid AR Glasses
 device-display-body: 카메라 + 작은 디스플레이를 활용한 대화 지원
 device-xr-title: Immersive · Quest 3
 device-xr-body: 몰입형 기기를 활용한 대화 지원
-support-1a: 해커톤 2일 인건비 지급
-support-1b: 소속 직위(학부생·대학원생)에 따른 학생인건비 기준 적용
+registration-title: 참가등록비
+registration-undergraduate: 30,000원
+registration-graduate: 150,000원
+registration-note: 학부생의 적극적인 참여를 장려하기 위해 등록비 할인 혜택을 제공합니다.
+support-1a: 센터 연구원의 개발·연구 지원
+support-1b: 아이디어 구현을 위한 라이브러리·기본 프레임워크 제공
 support-2a: 식사·간식 제공
-support-2b: 숙박 제공하지 않음
+support-2b: 외부 대학 참가자 숙박 지원 예정 · 세부 조건 별도 안내
+internship-award-title: 우수 참가자 수상 혜택
+internship-award-detail: 2개월 인턴십 기회 · 260만원 상당
 
 ## 외부 공개 흐름
 
@@ -67,7 +72,7 @@ support-2b: 숙박 제공하지 않음
 
 ## 현장 해커톤 운영
 
-온라인 공모를 바탕으로 16–30명을 선발하고, 연구센터가 2인 1팀으로 구성합니다. 연구센터는 공모된 아이디어에 맞춰 라이브러리나 기본 프레임워크를 제공하고, 참가자는 이를 활용해 이틀간 개발합니다. 개발용 기기, 개발 컴퓨터, AI 계정도 지원합니다. 해커톤 결과를 바탕으로 인턴십 7–10명을 선발해 후속 연구로 연결합니다.
+온라인 공모를 바탕으로 참가자를 선발하고, 연구센터가 2인 1팀으로 구성합니다. 연구센터는 공모된 아이디어에 맞춰 라이브러리나 기본 프레임워크를 제공하고, 참가자는 이를 활용해 이틀간 개발합니다. 개발용 기기, 개발 컴퓨터, AI 계정도 지원합니다. 해커톤 우수 참가자에게 수상 혜택으로 2개월 인턴십 기회(260만원 상당)를 제공해 후속 연구로 연결합니다.
 
 - 1일차 09:00–10:00: 우운택 센터장 Symbiotic AIR 기본 설명 (1시간)
 - 1일차 10:00–12:00: 센터 연구원 라이브러리·기본 프레임워크 설명 (2시간)
@@ -80,7 +85,7 @@ support-2b: 숙박 제공하지 않음
 
 신청 폼: https://docs.google.com/forms/d/e/1FAIpQLScTuntOfnmoQhCeSIaXAVggEzbCuVe4nyfC_mJRGF1Tr7hpqg/viewform
 
-기본 정보는 이름, KAIST 소속 학과·전공, 재학과정(학부·석사·박사·석박사 통합), 이메일입니다. CV 또는 포트폴리오는 선택 제출이며, 파일(1개·최대 10MB) 또는 링크 중 편한 방법으로 제출할 수 있습니다.
+기본 정보는 이름, 소속 대학·학과·전공, 재학과정(학부·석사·박사·석박사 통합), 이메일입니다. CV 또는 포트폴리오는 선택 제출이며, 파일(1개·최대 10MB) 또는 링크 중 편한 방법으로 제출할 수 있습니다.
 
 지원자는 11월 6일까지 신청과 함께 아이디어를 설명하는 1장 이미지와 300자 안팎의 요약문을 제출합니다. 심사 결과는 11월 13일 안내합니다. 아이디어에는 선택한 대화 상황 × 활용 기기를 반드시 명시하고, 문제 상황, 제안 경험, AR/XR의 역할, 기대 효과를 설명합니다. 완성도 높은 그래픽 디자인은 요구하지 않습니다.
 
@@ -90,7 +95,13 @@ support-2b: 숙박 제공하지 않음
 
 ## 지원대상 및 지원사항
 
-대상은 KAIST 소속 학부생 및 대학원생입니다. 해커톤 2일 인건비는 소속 직위에 맞는 학생인건비 기준에 따라 지급합니다. 식사와 간식을 제공하며 숙박은 제공하지 않습니다.
+대상은 대학 학부생 및 대학원생 (KAIST 외 대학 포함)입니다. 기자재 및 센터 연구원의 개발·연구 지원과 식사·간식을 제공합니다. 외부 대학 참가자 숙박 지원은 예정 사항이며 세부 조건은 확정 후 안내합니다. 해커톤 우수 참가자에게는 수상 혜택으로 2개월 인턴십 기회(260만원 상당)를 제공합니다.
+
+## 참가등록비
+
+학부생 30,000원 · 대학원생 150,000원
+
+학부생의 적극적인 참여를 장려하기 위해 등록비 할인 혜택을 제공합니다.
 
 ## 아이디어 공모: 상황 × 기기 (필수)
 
@@ -102,9 +113,9 @@ support-2b: 숙박 제공하지 않음
 
 기기는 다음 세 종류 중 선택합니다.
 
-- 카메라 + 오디오 기기
-- Lightweight: 카메라 + 작은 디스플레이 (Rokid AR Glasses)
-- Immersive: Quest 3
+- [Ray-Ban Meta](https://www.meta.com/ai-glasses/ray-ban-meta/): 카메라 + 오디오 · 디스플레이 없음
+- Lightweight: [Rokid AR Glasses](https://global.rokid.com/products/rokid-glasses): 카메라 + 작은 디스플레이
+- Immersive: [Meta Quest 3](https://www.meta.com/quest/quest-3/): 몰입형 XR 헤드셋
 
 ## AIR4BTS 개념 안내
 
