@@ -4,6 +4,8 @@
 
 ## poster-fields
 
+optional-portfolio: 선택 제출 · CV 또는 포트폴리오: 파일(1개·최대 10MB) 또는 링크
+
 choice-note: 대화 상황과 기기는 독립적인 선택 항목입니다. 원하는 상황과 기기를 자유롭게 조합해 제안하세요.
 research-examples-note: 아래 INFORMATION · VISUAL CONTEXT · INTERACTION 카드는 아이디어 예시입니다. 이외의 대화 지원 아이디어도 자유롭게 제안할 수 있습니다.
 
@@ -75,6 +77,10 @@ support-2b: 숙박 제공하지 않음
 - 2일차 17:00–: 발표
 
 ## 아이디어 제출 안내
+
+신청 폼: https://docs.google.com/forms/d/e/1FAIpQLScTuntOfnmoQhCeSIaXAVggEzbCuVe4nyfC_mJRGF1Tr7hpqg/viewform
+
+기본 정보는 이름, KAIST 소속 학과·전공, 재학과정(학부·석사·박사·석박사 통합), 이메일입니다. CV 또는 포트폴리오는 선택 제출이며, 파일(1개·최대 10MB) 또는 링크 중 편한 방법으로 제출할 수 있습니다.
 
 지원자는 11월 6일까지 신청과 함께 아이디어를 설명하는 1장 이미지와 300자 안팎의 요약문을 제출합니다. 심사 결과는 11월 13일 안내합니다. 아이디어에는 선택한 대화 상황 × 활용 기기를 반드시 명시하고, 문제 상황, 제안 경험, AR/XR의 역할, 기대 효과를 설명합니다. 완성도 높은 그래픽 디자인은 요구하지 않습니다.
 

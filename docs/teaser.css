@@ -18,3 +18,5 @@
 
 /* Keep the human connection headline intact across screen sizes. */
 .promo h1{font-size:60px;line-height:1.18;letter-spacing:-2.5px}@media(max-width:900px){.promo h1{font-size:44px;letter-spacing:-2px}}@media(max-width:700px){.promo h1{font-size:44px;letter-spacing:-2px}}@media print{.promo h1{font-size:44px;line-height:1.15}}
+
+.promo .promo-optional{font-size:14px;line-height:1.6;margin-top:14px;color:#536d81}@media print{.promo .promo-optional{margin-top:8px}.promo-required{margin:10px 0;padding:10px 0}}
