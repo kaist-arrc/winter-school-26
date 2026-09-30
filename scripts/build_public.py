@@ -59,16 +59,21 @@ page = '''<!doctype html>
 <meta name="theme-color" content="#093c76">
 <meta name="description" content="KAIST 증강현실연구센터(ARRC) 2026–2027 Winter Research Talent Program 안내. AR/XR로 돕는 1:1 대면 대화를 탐구하는 단계형 연구경험 프로그램.">
 <title>KAIST ARRC · Winter Research Talent Program</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <style>body{padding:24px 0}@media(max-width:700px){body{padding:10px 0}}@media print{body{padding:0}}</style>
 </head><body>
-<nav class="poster-versions no-print" aria-label="포스터 버전"><span>WINTER RESEARCH TALENT PROGRAM</span><div><a href="teaser.html">01 홍보형</a><a href="index.html" aria-current="page">02 상세형</a></div></nav>
+<nav class="poster-versions no-print" aria-label="포스터 버전"><span>WINTER RESEARCH TALENT PROGRAM</span><div><a href="../">01 홍보형</a><a href="./" aria-current="page">02 상세형</a></div></nav>
 <main>
-''' + poster + '\n</main></body></html>\n'
-(output / 'index.html').write_text(page, encoding='utf-8')
+''' + re.sub(r'((?:href|src)=")(assets/|content/)', r'\1../\2', poster) + '\n</main></body></html>\n'
+details_output = output / 'details'
+details_output.mkdir(parents=True, exist_ok=True)
+(details_output / 'index.html').write_text(page, encoding='utf-8')
 for name in ('styles.css', 'teaser.html', 'teaser.css'):
     if name == 'teaser.html':
         teaser = inject_program_fields((root / name).read_text(encoding='utf-8'), fields)
+        teaser = teaser.replace('href="index.html"', 'href="details/"').replace('href="teaser.html"', 'href="./"')
+        (output / 'index.html').write_text(teaser, encoding='utf-8')
+        # Retain the former promotional URL for existing links.
         (output / name).write_text(teaser, encoding='utf-8')
     else:
         shutil.copy2(root / name, output / name)
@@ -84,10 +89,6 @@ reference_output = output / 'assets' / 'air4bts_woo'
 reference_output.mkdir(parents=True, exist_ok=True)
 for name in reference_names:
     shutil.copy2(root / 'assets' / 'air4bts_woo' / name, reference_output / name)
-output_content = output / 'content'
-output_content.mkdir(parents=True, exist_ok=True)
-shutil.copy2(root / 'content' / 'online-evaluation-submission-example.md', output_content / 'online-evaluation-submission-example.md')
-shutil.copy2(root / 'content' / 'online-evaluation-example.svg', output_content / 'online-evaluation-example.svg')
 # The original poster remains an editor reference, not a public branding asset.
 (output / 'assets/poster-reference.jpg').unlink(missing_ok=True)
 (output / '.nojekyll').touch()

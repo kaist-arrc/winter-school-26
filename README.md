@@ -23,8 +23,7 @@ Open http://localhost:4173. Serve the repository directory, not its parent.
 ## Files
 
 - `content/program.md`: single source of truth for the public schedule, program flow, online evaluation format and poster copy.
-- `content/online-evaluation-submission-example.md`: applicant-facing submission template and completed example.
-- `content/online-evaluation-example.svg`: editable one-page concept-board example linked from the submission document.
+- `content/google-form-questions.md`: questions, types and descriptions for manually configuring the Google Forms application.
 - `index.html`: semantic poster content and internal review. Edit this to change defaults.
 - `styles.css`: colors, typography, layout, responsive and print styles.
 - `app.js`: text editing, local persistence, JSON exchange, standalone HTML export.
@@ -46,7 +45,7 @@ After editing source content or styling, rebuild before committing:
 python3 scripts/build_public.py
 ```
 
-The builder reads `content/program.md`, injects its labeled fields into generated copies of both poster sources, and writes the read-only pages to `docs/`. The public submission example and editable SVG are copied to `docs/content/`.
+The builder reads `content/program.md`, injects its labeled fields into generated copies of both poster sources, and writes the read-only pages to `docs/`. The homepage (`docs/index.html`) shows the promotional poster; `/details/` shows the detailed poster. Application buttons link to the Google Forms response page.
 
 ## Official institutional branding
 
@@ -78,11 +77,11 @@ These references support making AI glasses visible in the recruitment hook, aski
 
 ## Two poster versions
 
-- `teaser.html`: attention-focused poster, with a conversation hook, brief research directions, device choice, benefits and a link to details. Public URL: https://kaist-arrc.github.io/winter-school-26/teaser.html
-- `docs/index.html`: information-rich public program poster, generated from the source editor. Public URL: https://kaist-arrc.github.io/winter-school-26/
+- `teaser.html`: attention-focused poster, with a conversation hook, brief research directions, device choice, benefits and a link to details. Public URL: https://kaist-arrc.github.io/winter-school-26/ (the former `/teaser.html` URL also works)
+- `docs/details/index.html`: information-rich public program poster, generated from the source editor. Public URL: https://kaist-arrc.github.io/winter-school-26/details/
 - `teaser.css`: self-contained recruitment poster layout, including mobile and A3 print styles. Both versions show their version date in the footer and use the official institution assets.
 
-Run `python3 scripts/build_public.py` after changing either version. Keep agreed program terms consistent between both sources. The promotional poster currently invites readers to view details; it does not present an application button while registration is unconfirmed.
+Run `python3 scripts/build_public.py` after changing either version. Keep agreed program terms consistent between both sources. The promotional poster links to Google Forms for applications and to `/details/` for the full program.
 
 ## AIR4BTS concept references
 

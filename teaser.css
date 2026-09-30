@@ -15,3 +15,6 @@
 @media(max-width:700px){.promo{display:flex;flex-direction:column}.promo-brand{order:0}.promo-hero{display:contents}.promo-hero-copy{order:1;padding:18px 22px 24px}.promo-dates{order:2}.promo .promo-visual{order:3;margin:24px 22px 0}.promo-proposal{order:4}.promo-program{order:5}.promo-support{order:6}.promo-concept{order:7}.promo-footer{order:8}.promo-program li p{word-break:keep-all;overflow-wrap:normal}}
 
 @media print{.promo .promo-deadline-link{display:none}.promo-hero{padding-top:8px;padding-bottom:16px}.promo h1{font-size:56px}.promo-proposal{padding-top:18px;padding-bottom:18px}.promo-support{padding-top:14px;padding-bottom:14px}.promo-footer{padding-top:12px;padding-bottom:8px}}
+
+/* Keep the human connection headline intact across screen sizes. */
+.promo h1{font-size:60px;line-height:1.18;letter-spacing:-2.5px}@media(max-width:900px){.promo h1{font-size:44px;letter-spacing:-2px}}@media(max-width:700px){.promo h1{font-size:44px;letter-spacing:-2px}}@media print{.promo h1{font-size:44px;line-height:1.15}}
