@@ -63,7 +63,9 @@ support-1a: 센터 연구원의 개발·연구 지원
 support-1b: 아이디어 구현을 위한 라이브러리·기본 프레임워크 제공
 support-2a: 식사·간식 제공
 support-2b: 외부 대학 참가자 숙박 지원 예정 · 세부 조건 별도 안내
-internship-award-title: 우수 참가자 수상 혜택
+internship-award-title: 해커톤 우수 참가자 선정 시 제공
+internship-award-name: KAIST ARRC 연구 인턴십 기회
+internship-award-value: 260만원 상당
 internship-award-detail: 2개월 인턴십 기회 · 260만원 상당
 
 ## 외부 공개 흐름
