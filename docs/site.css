@@ -8,7 +8,8 @@
   --brand:#004191;    /* --color-kaist-blue */
   --navy:#003171;     /* --color-kaist-blue-dark: core-experience surfaces */
   --sky:#18a8e0;      /* --color-kaist-sky: matrix highlight only */
-  --signal:#e8a317;   /* --color-signal: award only */
+  --signal:#ff6432;   /* ARRC logo red-orange: award only */
+  --signal-text:#ff8a63; /* lighter tint for small text on navy (AA 5.4:1) */
   --paper:#f4f7fb;    /* --color-wash */
   --tint:#eef5ff;     /* --color-tint */
   --line:#d9e0ea;     /* --color-line */
@@ -119,14 +120,14 @@ a:focus-visible,summary:focus-visible,.matrix td:focus-visible{outline:3px solid
 .rewards{background:var(--navy);color:#fff;border-top:0}
 .rewards .band-head p{color:var(--on-navy)}
 .internship-award{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;padding:36px 0 40px;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18)}
-.award-label{font-size:14px;font-weight:600;color:var(--signal)}
+.award-label{font-size:14px;font-weight:600;color:var(--signal-text)}
 .internship-award h3{margin-top:8px;font-size:var(--step3);line-height:1.25;font-weight:800;letter-spacing:-.03em}
 .award-duration{margin-top:8px;color:var(--on-navy)}
 .award-perks{margin-top:22px;display:grid;gap:10px}
 .award-perks li{padding-left:22px;position:relative;font-size:17px;line-height:1.55}
 .award-perks li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;background:var(--signal);border-radius:50%}
 .award-tracks{display:grid;gap:12px;align-content:start}
-.award-tracks div{padding:18px 22px;border:1px solid rgba(232,163,23,.6);border-radius:4px}
+.award-tracks div{padding:18px 22px;border:1px solid rgba(255,100,50,.6);border-radius:4px}
 .award-tracks dt{font-size:var(--step1);font-weight:800;color:var(--signal)}
 .award-tracks dd{margin-top:4px;font-size:15px;color:var(--on-navy)}
 .support{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:36px}
