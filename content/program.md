@@ -7,7 +7,7 @@
 
 optional-portfolio: 선택 제출 · CV 또는 포트폴리오: 파일(1개·최대 10MB) 또는 링크
 
-choice-note: 대화 상황과 기기는 독립적인 선택 항목입니다. 원하는 상황과 기기를 자유롭게 조합해 제안하세요.
+choice-note: 상황(A–C)과 기기(1–3)는 독립적으로 고릅니다. 자유롭게 조합해 “B × 2”처럼 명시하세요.
 research-examples-note: 아래 INFORMATION · VISUAL CONTEXT · INTERACTION 카드는 아이디어 예시입니다. 이외의 대화 지원 아이디어도 자유롭게 제안할 수 있습니다.
 
 last-edited: 포스터 버전 · 2026.09.30
@@ -26,7 +26,7 @@ flow-step-6: 12월 사전학습
 flow-date-6: 비동기
 flow-step-7: Winter Research Internship
 flow-date-7: 2027. 1–2
-flow-detail-7: 수상자 대상 · 2개월 인턴십 기회 · 260만원 상당
+flow-detail-7: 수상자 대상 · 최대 2개월 · 최신 기기·선도 연구그룹과 함께
 phase-1: 01 · 모집·결과 발표
 phase-2: 02 · 현장 해커톤
 phase-3: 03 · 수상자 인턴 연구
@@ -46,15 +46,21 @@ online-format: 제출 형식 · 1장 이미지(PNG/JPG 또는 1페이지 PDF) + 
 online-summary: 아이디어에는 어떤 상황 × 어떤 기기를 활용할지 반드시 명시합니다. 그래픽 완성도보다 해당 대화에서 어떤 도움을 언제 제공하는지가 중요합니다.
 online-example-title: 작성 예시 · 처음 만난 사람과의 대화를 돕는 AI 글래스
 applicant-body: 대학 학부생 및 대학원생 (KAIST 외 대학 포함)
-scenario-meeting: 업무/연구 회의 · 목표를 가진 논의
-scenario-personal: 개인 논의 · 일반적인 논의
-scenario-oneway: 강의 혹은 주문 받기 · 일방향이 강조된 상황
-device-ai-title: Ray-Ban Meta · 디스플레이 없음
-device-ai-body: 카메라 + 오디오로 대화를 지원하는 디스플레이 없는 기기
-device-display-title: Lightweight · Rokid AR Glasses
-device-display-body: 카메라 + 작은 디스플레이를 활용한 대화 지원
-device-xr-title: Immersive · Quest 3
-device-xr-body: 몰입형 기기를 활용한 대화 지원
+scenario-meeting-title: 업무·연구 회의
+scenario-meeting-body: 목표를 가진 논의
+scenario-personal-title: 개인 논의
+scenario-personal-body: 일반적인 논의
+scenario-oneway-title: 강의·주문 받기
+scenario-oneway-body: 일방향이 강조된 상황
+device-ai-title: Audio-first
+device-ai-body: 카메라 + 오디오 · 디스플레이 없음
+device-ai-example: Ray-Ban Meta
+device-display-title: Lightweight
+device-display-body: 카메라 + 작은 디스플레이
+device-display-example: Rokid AR Glasses
+device-xr-title: Immersive
+device-xr-body: 카메라 + 몰입형 디스플레이
+device-xr-example: Meta Quest 3
 registration-title: 참가등록비
 registration-undergraduate: 30,000원
 registration-graduate: 150,000원
@@ -65,8 +71,12 @@ support-2a: 식사·간식 제공
 support-2b: 외부 대학 참가자 숙박 지원 예정 · 세부 조건 별도 안내
 internship-award-title: 해커톤 우수 참가자 선정 시 제공
 internship-award-name: KAIST ARRC 연구 인턴십 기회
-internship-award-value: 260만원 상당
-internship-award-detail: 2개월 인턴십 기회 · 260만원 상당
+internship-award-perk-1: 최신 XR·AI 기기를 마음껏 써 보는 연구 환경
+internship-award-perk-2: 선도 연구그룹과 함께 아이디어를 실제 연구로
+award-center-name: ARRC 센터상
+award-center-detail: 대상 · 최우수상 · 우수상\n인턴십 기회
+award-industry-name: 산업체 선정상
+award-industry-detail: 최우수상 · 우수상\n부상 수여
 
 ## 외부 공개 흐름
 
@@ -74,7 +84,7 @@ internship-award-detail: 2개월 인턴십 기회 · 260만원 상당
 
 ## 현장 해커톤 운영
 
-온라인 공모를 바탕으로 참가자를 선발하고, 연구센터가 2인 1팀으로 구성합니다. 연구센터는 공모된 아이디어에 맞춰 라이브러리나 기본 프레임워크를 제공하고, 참가자는 이를 활용해 이틀간 개발합니다. 개발용 기기, 개발 컴퓨터, AI 계정도 지원합니다. 해커톤 우수 참가자에게 수상 혜택으로 2개월 인턴십 기회(260만원 상당)를 제공해 후속 연구로 연결합니다.
+온라인 공모를 바탕으로 참가자를 선발하고, 연구센터가 2인 1팀으로 구성합니다. 연구센터는 공모된 아이디어에 맞춰 라이브러리나 기본 프레임워크를 제공하고, 참가자는 이를 활용해 이틀간 개발합니다. 개발용 기기, 개발 컴퓨터, AI 계정도 지원합니다. 해커톤 우수 참가자에게 수상 혜택으로 최대 2개월 KAIST 연구 인턴십 기회를 제공해 후속 연구로 연결합니다.
 
 - 1일차 09:00–10:00: 우운택 센터장 Symbiotic AIR 기본 설명 (1시간)
 - 1일차 10:00–12:00: 센터 연구원 라이브러리·기본 프레임워크 설명 (2시간)
@@ -97,7 +107,7 @@ internship-award-detail: 2개월 인턴십 기회 · 260만원 상당
 
 ## 지원대상 및 지원사항
 
-대상은 대학 학부생 및 대학원생 (KAIST 외 대학 포함)입니다. 기자재 및 센터 연구원의 개발·연구 지원과 식사·간식을 제공합니다. 외부 대학 참가자 숙박 지원은 예정 사항이며 세부 조건은 확정 후 안내합니다. 해커톤 우수 참가자에게는 수상 혜택으로 2개월 인턴십 기회(260만원 상당)를 제공합니다.
+대상은 대학 학부생 및 대학원생 (KAIST 외 대학 포함)입니다. 기자재 및 센터 연구원의 개발·연구 지원과 식사·간식을 제공합니다. 외부 대학 참가자 숙박 지원은 예정 사항이며 세부 조건은 확정 후 안내합니다. 해커톤 우수 참가자에게는 수상 혜택으로 최대 2개월 KAIST 연구 인턴십 기회를 제공합니다.
 
 ## 참가등록비
 
@@ -109,15 +119,15 @@ internship-award-detail: 2개월 인턴십 기회 · 260만원 상당
 
 같은 공간에서 이루어지는 1:1 대화 상황을 선택하고, 활용할 기기 종류를 반드시 함께 명시합니다. 대화 상황과 기기는 독립적인 선택 항목으로 자유롭게 조합할 수 있습니다.
 
-- 업무/연구 회의: 목표를 가진 논의
-- 개인 논의: 일반적인 논의
-- 강의 혹은 주문 받기: 일방향이 강조된 상황
+- A · 업무·연구 회의: 목표를 가진 논의
+- B · 개인 논의: 일반적인 논의
+- C · 강의·주문 받기: 일방향이 강조된 상황
 
 기기는 다음 세 종류 중 선택합니다.
 
-- [Ray-Ban Meta](https://www.meta.com/ai-glasses/ray-ban-meta/): 카메라 + 오디오 · 디스플레이 없음
-- Lightweight: [Rokid AR Glasses](https://global.rokid.com/products/rokid-glasses): 카메라 + 작은 디스플레이
-- Immersive: [Meta Quest 3](https://www.meta.com/quest/quest-3/): 몰입형 XR 헤드셋
+- 1 · Audio-first: 카메라 + 오디오 · 디스플레이 없음 · 예: [Ray-Ban Meta](https://www.meta.com/ai-glasses/ray-ban-meta/)
+- 2 · Lightweight: 카메라 + 작은 디스플레이 · 예: [Rokid AR Glasses](https://global.rokid.com/products/rokid-glasses)
+- 3 · Immersive: 카메라 + 몰입형 디스플레이 · 예: [Meta Quest 3](https://www.meta.com/quest/quest-3/)
 
 ## AIR4BTS 개념 안내
 

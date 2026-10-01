@@ -12,4 +12,4 @@
 - Concept reference: https://kaist-arrc.github.io/arrc-10th/
 
 - Eligibility: KAIST undergraduate and graduate students. Hackathon support: two days of pay at the student personnel rate for their position, meals/snacks, no accommodation.
-- Idea proposals must specify situation × device. Situations: work/research meetings (goal-oriented), personal discussion (general), teaching/order-taking (one-way emphasis). Devices: camera + audio; Lightweight (camera + small display: Rokid AR Glasses); Immersive (Quest 3).
+- Idea proposals must specify situation × device. Situations: work/research meetings (goal-oriented), personal discussion (general), teaching/order-taking (one-way emphasis). Devices, numbered 1–3 as type → capability → example: 1 Audio-first (camera + audio, no display: Ray-Ban Meta); 2 Lightweight (camera + small display: Rokid AR Glasses); 3 Immersive (camera + immersive display: Meta Quest 3). Situations are lettered A–C.
