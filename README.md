@@ -13,7 +13,7 @@ Recruitment site for the KAIST ARRC Symbiotic AIR4BTS winter hackathon and inter
 
 ```
 docs/     the public site — edit these files directly (no build step)
-  styles.css   shared poster styles   promo.css    promotional poster
+  site.css     one stylesheet for both posters (concepts/ has its own)
   assets/      logos, share image, concept illustrations
 notes/    internal, never published: program facts, Google Form questions,
           director brief, operating review, source images and audits
