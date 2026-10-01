@@ -1,7 +1,8 @@
 # ARRC Winter School
 
 - Public routes: `/` serves the promotional poster; `/details/` serves the detailed poster. Keep `/teaser.html` available for existing links.
-- Editable poster sources: update `index.html` (detail) and `teaser.html` (promotional), then run `python scripts/build_public.py` to regenerate `docs/`.
+- `docs/` is the site and the source: edit `docs/index.html` (promotional) and `docs/details/index.html` (detail) directly; there is no build step. `docs/teaser.html` only redirects to `/`. Internal material goes in `notes/`, never in `docs/`.
+- After any CSS change run `python tools/stamp_css.py` (content-hash `?v=` cache busting), then `python -m unittest discover tests`.
 - Symbiotic AIR: depict a human-to-human, same-place 1:1 discussion, not a chatbot, message exchange, remote call, or AI interlocutor.
 - AI/AR glasses provide quiet contextual support while people lead the discussion and decision; consented feedback helps the support improve.
 - The teaser is a concise recruitment poster led by “XR·AI로, 사람과 사람을 더 가깝게.” Keep the hackathon date, submission deadline and concrete proposal requirements prominent. Longer AIR4BTS concept explanations live in an expandable reference section and the detail poster.

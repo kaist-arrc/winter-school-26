@@ -1,15 +1,15 @@
 """Reuse text-free illustration fragments without changing the originals.
 
 The source diagrams are 1672 x 941. Coordinates deliberately exclude labels;
-all new labels are selectable text in concepts/index.html.
+all new labels are selectable text in docs/concepts/index.html.
 Run only when rebuilding the illustration assets (requires Pillow).
 """
 from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'assets/air4bts_woo'
-DESTINATION = ROOT / 'assets/concept-illustrations'
+SOURCE = ROOT / 'notes/sources/air4bts_woo'
+DESTINATION = ROOT / 'docs/assets/concept-illustrations'
 FRAGMENTS = {
     'air-observer': ('29405226-2EC3-4148-92DE-F0D3CD0B64FE.png', (22, 350, 190, 524)),
     'experience-scenes': ('29405226-2EC3-4148-92DE-F0D3CD0B64FE.png', (481, 600, 782, 668)),

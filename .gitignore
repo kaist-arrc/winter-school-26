@@ -1,0 +1,4 @@
+output/
+tmp/
+.playwright-mcp/
+__pycache__/
