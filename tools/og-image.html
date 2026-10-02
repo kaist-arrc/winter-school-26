@@ -2,20 +2,37 @@
 <html lang="ko">
 <meta charset="utf-8">
 <title>KAIST ARRC 공유 이미지</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-*{box-sizing:border-box}body{margin:0;width:1200px;height:630px;background:#fff;color:#08396e;font-family:'Malgun Gothic',sans-serif}
-main{height:630px;padding:38px 48px;border-top:9px solid #08396e}
-header{display:flex;align-items:center;gap:24px;height:46px}header img{width:146px;height:auto}header img+img{width:62px}header span{margin-left:auto;font-size:22px;font-weight:700}
-.hero{display:grid;grid-template-columns:1fr 500px;gap:28px;margin-top:30px;align-items:center}
-.eyebrow{font-size:19px;font-weight:700;margin:0 0 12px;color:#0c5ca9}
-h1{font-size:54px;line-height:1.25;letter-spacing:-2.5px;margin:0;font-weight:900}h1 em{font-style:normal;color:#0c5ca9}
-.program{font-size:17px;line-height:1.5;margin:17px 0 0;color:#61788f}
-.photo{width:500px;height:292px;object-fit:cover}
-footer{display:grid;grid-template-columns:1fr 1fr;margin-top:30px;gap:14px}footer div{padding:18px 24px;background:#08396e;color:white}footer div+div{background:#fff0b8;color:#08396e}footer span{display:block;font-size:18px;margin-bottom:4px}footer strong{font-size:31px;letter-spacing:-.8px}
+/* Tokens mirror docs/site.css (ARRC site colors) */
+:root{--ink:#10151f;--brand:#004191;--navy:#003171;--sky:#18a8e0;--muted:#5c6675;--on-navy:rgba(255,255,255,.78)}
+*{box-sizing:border-box}
+body{margin:0;width:1200px;height:630px;overflow:hidden;background:#fff;color:var(--ink);font-family:"Pretendard Variable",Pretendard,sans-serif;word-break:keep-all}
+main{display:grid;grid-template-columns:600px 600px;grid-template-rows:322px 300px;height:630px;border-top:8px solid var(--navy)}
+.copy{grid-row:1/3;padding:40px 0 0 56px;display:flex;flex-direction:column}
+.logos{display:flex;align-items:center;gap:22px}.logos img{height:40px;width:auto}.logos img+img{height:54px}
+.kicker{margin:42px 0 16px;font-size:23px;font-weight:700;color:var(--brand)}
+h1{margin:0;font-size:70px;line-height:1.16;letter-spacing:-.045em;font-weight:800}
+h1 em{font-style:normal;color:var(--brand)}
+.audience{margin:auto 0 44px;font-size:22px;font-weight:600;color:var(--muted)}
+.photo{margin:0}.photo img{display:block;width:600px;height:322px;object-fit:cover;object-position:50% 70%}
+.dates{display:flex;flex-direction:column;justify-content:center;gap:22px;background:var(--navy);color:#fff;padding:0 48px}
+.dates div+div{padding-top:22px;border-top:1px solid rgba(255,255,255,.22)}
+.dates span{display:block;font-size:20px;font-weight:600;color:var(--on-navy);margin-bottom:2px}
+.dates strong{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1.2}
+.dates div+div strong{color:#7fd3f4}
 </style>
 <main>
-<header><img src="../docs/assets/kaist-logo.png" alt="KAIST"><img src="../docs/assets/arrc-logo.png" alt="ARRC"><span>KAIST 학부생·대학원생 대상</span></header>
-<section class="hero"><div><p class="eyebrow">2026 XR·AI 아이디어 해커톤</p><h1>XR·AI로,<br>사람과 사람을<br><em>더 가깝게.</em></h1><p class="program">Symbiotic AIR4BTS<br>Winter Research Talent Program</p></div><img class="photo" src="../docs/assets/symbiotic-air-face-to-face.png" alt="AR 안경을 착용하고 마주 앉아 대화하는 두 사람"></section>
-<footer><div><span>현장 해커톤 · KAIST</span><strong>11월 21–22일</strong></div><div><span>신청·아이디어 제출 마감</span><strong>11월 6일까지</strong></div></footer>
+  <section class="copy">
+    <div class="logos"><img src="../docs/assets/kaist-logo.png" alt="KAIST"><img src="../docs/assets/arrc-logo.png" alt="ARRC"></div>
+    <p class="kicker">2026 XR·AI 아이디어 해커톤</p>
+    <h1>XR·AI로,<br>사람과 사람을<br><em>더 가깝게.</em></h1>
+    <p class="audience">KAIST 및 외부 대학 학부생·대학원생</p>
+  </section>
+  <figure class="photo"><img src="../docs/assets/symbiotic-air-face-to-face.png" alt="AR 안경을 착용하고 마주 앉아 대화하는 두 사람"></figure>
+  <footer class="dates">
+    <div><span>현장 해커톤 · KAIST</span><strong>11월 21–22일</strong></div>
+    <div><span>신청·아이디어 제출 마감</span><strong>11월 6일</strong></div>
+  </footer>
 </main>
 </html>
